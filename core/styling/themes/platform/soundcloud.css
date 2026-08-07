@@ -1,0 +1,1107 @@
+[data-theme="soundcloud"] {
+	--colour-background: #20140e;
+	--colour-surface-level-one: #342218;
+	--colour-surface-level-two: #442d22;
+	--colour-surface-level-three: #54392c;
+	--colour-surface-muted: #19100b;
+	--colour-surface-sunken: #120b08;
+
+	--colour-text-primary: #f1ece9;
+	--colour-text-secondary: #cdbeb7;
+	--colour-text-muted: #a28f86;
+	--colour-text-disabled: #70635c;
+	--colour-text-inverse: #20140e;
+
+	--colour-border-subtle: rgba(255, 255, 255, 0.08);
+	--colour-border-standard: rgba(255, 255, 255, 0.14);
+	--colour-border-strong: rgba(255, 255, 255, 0.24);
+
+	--colour-accent: #FF5500;
+	--colour-accent-hover: #ff742e;
+	--colour-accent-pressed: #c74200;
+	--colour-accent-light: #f8915d;
+	--colour-accent-muted: rgba(255, 85, 0, 0.2);
+	--colour-on-accent: #ffffff;
+	--colour-accent-glow-strong: rgba(255, 85, 0, 0.14);
+	--colour-accent-glow-soft: rgba(255, 85, 0, 0.08);
+
+	--colour-success: #34c07e;
+	--colour-on-success: #14161c;
+	--colour-success-muted: rgba(52, 192, 126, 0.18);
+	--colour-warning: #e8a13f;
+	--colour-on-warning: #14161c;
+	--colour-warning-muted: rgba(232, 161, 63, 0.18);
+	--colour-error: #f0607d;
+	--colour-on-error: #14161c;
+	--colour-error-muted: rgba(240, 96, 125, 0.18);
+	--colour-info: #4fa5f2;
+	--colour-on-info: #14161c;
+	--colour-info-muted: rgba(79, 165, 242, 0.18);
+
+	--colour-shadow: rgba(0, 0, 0, 0.5);
+	--colour-scrollbar-thumb: rgba(255, 255, 255, 0.18);
+	--colour-scrollbar-thumb-hover: rgba(255, 255, 255, 0.3);
+	--colour-selection-background: rgba(255, 85, 0, 0.3);
+	--colour-selection-text: #f1ece9;
+	--colour-focus-ring: #f8915d;
+	--colour-skeleton: #a28f86;
+
+	--colour-glass-surface: rgba(52, 34, 24, 0.55);
+	--colour-glass-surface-strong: rgba(52, 34, 24, 0.78);
+	--colour-glass-border: rgba(255, 255, 255, 0.1);
+	--colour-glass-highlight: rgba(255, 255, 255, 0.06);
+	--colour-glass-shadow: rgba(0, 0, 0, 0.5);
+
+	--icon-tint-filter: invert(46%) sepia(76%) saturate(354%) hue-rotate(326deg) brightness(105%) contrast(129%);
+
+	color-scheme: dark;
+
+	--elevation-level-one: 0px 1px 2px var(--colour-shadow), 0px 1px 3px var(--colour-shadow);
+	--elevation-level-two: 0px 2px 4px var(--colour-shadow), 0px 4px 6px var(--colour-shadow);
+	--elevation-level-three: 0px 4px 8px var(--colour-shadow), 0px 8px 16px var(--colour-shadow);
+	--elevation-level-four: 0px 8px 16px var(--colour-shadow), 0px 16px 24px var(--colour-shadow);
+	--elevation-level-five: 0px 16px 24px var(--colour-shadow), 0px 24px 40px var(--colour-shadow);
+}
+
+[data-theme="soundcloud"] .icon-canvas img,
+[data-theme="soundcloud"] .icon-canvas svg,
+[data-theme="soundcloud"] .icon-canvas picture {
+	filter: var(--icon-tint-filter);
+}
+
+[data-theme="soundcloud"] html,
+[data-theme="soundcloud"] body {
+	background-color: var(--colour-background);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] body {
+	background-image: radial-gradient(circle at 15% -10%, var(--colour-accent-glow-strong), transparent 45%),
+		radial-gradient(circle at 85% 110%, var(--colour-accent-glow-soft), transparent 40%);
+	background-attachment: fixed;
+}
+
+[data-theme="soundcloud"] ::selection {
+	background-color: var(--colour-selection-background);
+	color: var(--colour-selection-text);
+}
+
+[data-theme="soundcloud"] :focus-visible {
+	outline-color: var(--colour-focus-ring);
+}
+
+[data-theme="soundcloud"] ::-webkit-scrollbar-thumb {
+	background-color: var(--colour-scrollbar-thumb);
+}
+
+[data-theme="soundcloud"] ::-webkit-scrollbar-thumb:hover {
+	background-color: var(--colour-scrollbar-thumb-hover);
+}
+
+[data-theme="soundcloud"] hr {
+	border-block-start-color: var(--colour-border-standard);
+}
+
+[data-theme="soundcloud"] mark {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] code,
+[data-theme="soundcloud"] kbd,
+[data-theme="soundcloud"] samp,
+[data-theme="soundcloud"] .text-code {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-accent-pressed);
+	border-color: var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] kbd {
+	background-color: var(--colour-surface-level-one);
+	color: var(--colour-text-secondary);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="soundcloud"] pre {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-text-primary);
+	border: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] blockquote {
+	border-inline-start-color: var(--colour-accent);
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="soundcloud"] blockquote footer {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .link-standard,
+[data-theme="soundcloud"] .link-underline,
+[data-theme="soundcloud"] .link-quiet {
+	color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .link-standard:hover,
+[data-theme="soundcloud"] .link-underline:hover {
+	color: var(--colour-accent-hover);
+}
+
+[data-theme="soundcloud"] .link-button-style {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="soundcloud"] .link-button-style:hover {
+	background-color: var(--colour-accent-muted);
+	filter: brightness(0.97);
+}
+
+[data-theme="soundcloud"] .list-divided > * + * {
+	border-block-start-color: var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] .horizontal-rule-thick {
+	border-block-start-color: var(--colour-border-strong);
+}
+
+[data-theme="soundcloud"] .button-variant-filled {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="soundcloud"] .button-variant-filled:hover {
+	background-color: var(--colour-accent-hover);
+}
+
+[data-theme="soundcloud"] .button-variant-filled:active {
+	background-color: var(--colour-accent-pressed);
+}
+
+[data-theme="soundcloud"] .button-variant-outlined {
+	border-color: var(--colour-accent);
+	color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .button-variant-outlined:hover {
+	background-color: var(--colour-accent-muted);
+}
+
+[data-theme="soundcloud"] .button-variant-ghost {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .button-variant-ghost:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="soundcloud"] .button-variant-text {
+	color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .button-variant-elevated {
+	background-color: var(--colour-surface-level-one);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .button-group,
+[data-theme="soundcloud"] .button-group-vertical {
+	box-shadow: var(--elevation-level-one);
+}
+
+[data-theme="soundcloud"] .button-group .button,
+[data-theme="soundcloud"] .button-group-vertical .button {
+	border-color: var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] .floating-action-button {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="soundcloud"] .floating-action-button:hover {
+	background-color: var(--colour-accent-hover);
+}
+
+[data-theme="soundcloud"] .form-field-label {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .form-field-required-marker {
+	color: var(--colour-error);
+}
+
+[data-theme="soundcloud"] .form-field-helper-text {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .form-field-error-text {
+	color: var(--colour-error);
+}
+
+[data-theme="soundcloud"] .text-field,
+[data-theme="soundcloud"] .text-area-field,
+[data-theme="soundcloud"] .select-field,
+[data-theme="soundcloud"] .number-stepper-input {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .text-field:focus-visible,
+[data-theme="soundcloud"] .text-area-field:focus-visible,
+[data-theme="soundcloud"] .select-field:focus-visible {
+	border-color: var(--colour-accent);
+	outline-color: var(--colour-focus-ring);
+}
+
+[data-theme="soundcloud"] .text-field-invalid {
+	border-color: var(--colour-error);
+}
+
+[data-theme="soundcloud"] .input-group {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="soundcloud"] .input-group-addon {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .search-field-clear-button:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="soundcloud"] .floating-label-field-label {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .floating-label-field .text-field:focus ~ .floating-label-field-label,
+[data-theme="soundcloud"] .floating-label-field .text-field:not(:placeholder-shown) ~ .floating-label-field-label {
+	color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .checkbox-field-input,
+[data-theme="soundcloud"] .radio-field-input {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="soundcloud"] .checkbox-field-input::after {
+	border-color: var(--colour-on-accent);
+}
+
+[data-theme="soundcloud"] .checkbox-field-input:checked,
+[data-theme="soundcloud"] .checkbox-field-input:indeterminate {
+	background-color: var(--colour-accent);
+	border-color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .checkbox-field-input:indeterminate::after {
+	background-color: var(--colour-on-accent);
+}
+
+[data-theme="soundcloud"] .radio-field-input:checked {
+	border-color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .radio-field-input::after {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .switch-toggle-input {
+	background-color: var(--colour-surface-sunken);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="soundcloud"] .switch-toggle-input::after {
+	background-color: var(--colour-surface-level-one);
+	box-shadow: var(--elevation-level-one);
+}
+
+[data-theme="soundcloud"] .switch-toggle-input:checked {
+	background-color: var(--colour-accent);
+	border-color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .range-slider-field {
+	background-color: var(--colour-surface-sunken);
+}
+
+[data-theme="soundcloud"] .range-slider-field::-webkit-slider-thumb {
+	background-color: var(--colour-accent);
+	border-color: var(--colour-surface-level-one);
+}
+
+[data-theme="soundcloud"] .range-slider-field::-moz-range-thumb {
+	background-color: var(--colour-accent);
+	border-color: var(--colour-surface-level-one);
+}
+
+[data-theme="soundcloud"] .file-upload-dropzone {
+	background-color: var(--colour-surface-muted);
+	border-color: var(--colour-border-strong);
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="soundcloud"] .file-upload-dropzone-active {
+	border-color: var(--colour-accent);
+	background-color: var(--colour-accent-muted);
+}
+
+[data-theme="soundcloud"] .file-upload-list-item {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="soundcloud"] .number-stepper-field {
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="soundcloud"] .number-stepper-button {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .number-stepper-button:hover {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] fieldset.form-fieldset {
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="soundcloud"] legend.form-legend {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .navigation-bar {
+	background-color: var(--colour-glass-surface);
+	border-block-end: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-overlay));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-overlay));
+	box-shadow: 0px 1px 0px var(--colour-glass-highlight) inset;
+}
+
+[data-theme="soundcloud"] .navigation-bar-brand {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .navigation-bar-link {
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="soundcloud"] .navigation-bar-link:hover,
+[data-theme="soundcloud"] .navigation-bar-link-active {
+	color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .navigation-bar-link::after {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .navigation-bar-links {
+	background-color: var(--colour-glass-surface-strong);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="soundcloud"] .navigation-bar-toggle-button-line {
+	background-color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .sidebar-navigation {
+	background-color: var(--colour-surface-level-one);
+	border-inline-end: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] .sidebar-navigation-item {
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="soundcloud"] .sidebar-navigation-item:hover {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .sidebar-navigation-item[data-active="true"] {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="soundcloud"] .sidebar-navigation-section-label {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .bottom-tab-bar {
+	background-color: var(--colour-glass-surface-strong);
+	border-block-start: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="soundcloud"] .bottom-tab-bar-item {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .bottom-tab-bar-item-active {
+	color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .breadcrumb-item {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .breadcrumb-item:last-child {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .breadcrumb-separator {
+	color: var(--colour-text-disabled);
+}
+
+[data-theme="soundcloud"] .pagination-item {
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="soundcloud"] .pagination-item:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="soundcloud"] .pagination-item-active {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="soundcloud"] .tabs-list {
+	border-block-end-color: var(--colour-border-standard);
+}
+
+[data-theme="soundcloud"] .tabs-list-vertical {
+	border-inline-end-color: var(--colour-border-standard);
+}
+
+[data-theme="soundcloud"] .tabs-list-item {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .tabs-list-item:hover {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .tabs-list-item-active {
+	color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .tabs-list-item::after {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .stepper-wizard-step-circle {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .stepper-wizard-step[data-complete="true"] .stepper-wizard-step-circle,
+[data-theme="soundcloud"] .stepper-wizard-step[data-active="true"] .stepper-wizard-step-circle {
+	background-color: var(--colour-accent);
+	border-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="soundcloud"] .stepper-wizard-connector {
+	background-color: var(--colour-border-standard);
+}
+
+[data-theme="soundcloud"] .stepper-wizard-step[data-complete="true"] .stepper-wizard-connector {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .card {
+	background-color: var(--colour-surface-level-one);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .card-variant-outlined {
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="soundcloud"] .card-variant-filled {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="soundcloud"] .card-variant-elevated {
+	background-color: var(--colour-glass-surface-strong);
+	backdrop-filter: blur(var(--blur-medium));
+	-webkit-backdrop-filter: blur(var(--blur-medium));
+	border: var(--border-width-thin) solid var(--colour-glass-border);
+}
+
+[data-theme="soundcloud"] .card-subtitle {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .table-standard thead th {
+	color: var(--colour-text-secondary);
+	border-block-end-color: var(--colour-border-strong);
+}
+
+[data-theme="soundcloud"] .table-standard tbody td {
+	border-block-end-color: var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] .table-standard tbody tr:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="soundcloud"] .table-striped tbody tr:nth-child(even) {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="soundcloud"] .table-bordered td,
+[data-theme="soundcloud"] .table-bordered th {
+	border-color: var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] .table-sticky-header thead {
+	background-color: var(--colour-surface-level-one);
+}
+
+[data-theme="soundcloud"] .table-container {
+	background-color: var(--colour-surface-level-one);
+	border: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] .accordion-item {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="soundcloud"] .accordion-trigger {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .accordion-trigger:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="soundcloud"] .accordion-trigger-icon {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .tooltip-bubble {
+	background-color: var(--colour-text-primary);
+	color: var(--colour-background);
+	backdrop-filter: blur(var(--blur-small));
+	-webkit-backdrop-filter: blur(var(--blur-small));
+}
+
+[data-theme="soundcloud"] .popover-panel,
+[data-theme="soundcloud"] .dropdown-menu {
+	background-color: var(--colour-glass-surface-strong);
+	border: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="soundcloud"] .dropdown-menu-item {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .dropdown-menu-item:hover {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="soundcloud"] .dropdown-menu-divider {
+	background-color: var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] .alert-banner {
+	background-color: var(--colour-info-muted);
+	border-inline-start-color: var(--colour-info);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .alert-banner-icon {
+	color: var(--colour-info);
+}
+
+[data-theme="soundcloud"] .alert-banner[data-variant="success"] {
+	background-color: var(--colour-success-muted);
+	border-inline-start-color: var(--colour-success);
+}
+
+[data-theme="soundcloud"] .alert-banner[data-variant="success"] .alert-banner-icon {
+	color: var(--colour-success);
+}
+
+[data-theme="soundcloud"] .alert-banner[data-variant="warning"] {
+	background-color: var(--colour-warning-muted);
+	border-inline-start-color: var(--colour-warning);
+}
+
+[data-theme="soundcloud"] .alert-banner[data-variant="warning"] .alert-banner-icon {
+	color: var(--colour-warning);
+}
+
+[data-theme="soundcloud"] .alert-banner[data-variant="error"] {
+	background-color: var(--colour-error-muted);
+	border-inline-start-color: var(--colour-error);
+}
+
+[data-theme="soundcloud"] .alert-banner[data-variant="error"] .alert-banner-icon {
+	color: var(--colour-error);
+}
+
+[data-theme="soundcloud"] .alert-banner-close-button:hover {
+	background-color: rgba(20, 22, 28, 0.08);
+}
+
+[data-theme="soundcloud"] .toast-notification {
+	background-color: var(--colour-glass-surface-strong);
+	color: var(--colour-text-primary);
+	border: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="soundcloud"] .badge {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="soundcloud"] .badge[data-variant="success"] { background-color: var(--colour-success-muted); color: var(--colour-success); }
+[data-theme="soundcloud"] .badge[data-variant="warning"] { background-color: var(--colour-warning-muted); color: var(--colour-warning); }
+[data-theme="soundcloud"] .badge[data-variant="error"] { background-color: var(--colour-error-muted); color: var(--colour-error); }
+[data-theme="soundcloud"] .badge[data-variant="info"] { background-color: var(--colour-info-muted); color: var(--colour-info); }
+
+[data-theme="soundcloud"] .badge-dot {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .chip {
+	background-color: var(--colour-surface-muted);
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="soundcloud"] .chip-removable-button {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .chip-removable-button:hover {
+	background-color: var(--colour-border-standard);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .progress-bar-track {
+	background-color: var(--colour-surface-sunken);
+}
+
+[data-theme="soundcloud"] .progress-bar-fill {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .circular-progress-track {
+	stroke: var(--colour-surface-sunken);
+}
+
+[data-theme="soundcloud"] .circular-progress-fill {
+	stroke: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .avatar {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="soundcloud"] .avatar-status-indicator {
+	background-color: var(--colour-text-disabled);
+	border-color: var(--colour-surface-level-one);
+}
+
+[data-theme="soundcloud"] .avatar-status-indicator[data-status="online"] {
+	background-color: var(--colour-success);
+}
+
+[data-theme="soundcloud"] .avatar-status-indicator[data-status="away"] {
+	background-color: var(--colour-warning);
+}
+
+[data-theme="soundcloud"] .avatar-group .avatar {
+	border-color: var(--colour-surface-level-one);
+}
+
+[data-theme="soundcloud"] .empty-state-container {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .modal-dialog-backdrop {
+	background-color: rgba(20, 22, 28, 0.35);
+}
+
+[data-theme="soundcloud"] .modal-dialog {
+	background-color: var(--colour-glass-surface-strong);
+	color: var(--colour-text-primary);
+	border: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="soundcloud"] .modal-dialog-title {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .modal-dialog-close-button:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="soundcloud"] .modal-dialog-footer {
+	border-block-start: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] .loader-linear {
+	background-color: var(--colour-surface-sunken);
+}
+
+[data-theme="soundcloud"] .loader-linear-fill {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .loader-circular,
+[data-theme="soundcloud"] .loader-circular-dual-ring::after {
+	color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .loader-dots-container span {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .skeleton-loader {
+	color: var(--colour-skeleton);
+	background-color: var(--colour-surface-sunken);
+}
+
+[data-theme="soundcloud"] .video-player-container {
+	background-color: #000000;
+}
+
+[data-theme="soundcloud"] .video-player-center-play-button {
+	background-color: rgba(20, 22, 28, 0.55);
+	color: #ffffff;
+	backdrop-filter: blur(var(--blur-medium));
+	-webkit-backdrop-filter: blur(var(--blur-medium));
+}
+
+[data-theme="soundcloud"] .video-player-controls-bar,
+[data-theme="soundcloud"] .video-player-title-overlay {
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+	color: #ffffff;
+}
+
+[data-theme="soundcloud"] .video-player-seek-bar-track {
+	background-color: rgba(255, 255, 255, 0.28);
+}
+
+[data-theme="soundcloud"] .video-player-seek-bar-buffered {
+	background-color: rgba(255, 255, 255, 0.45);
+}
+
+[data-theme="soundcloud"] .video-player-seek-bar-progress {
+	background-color: var(--colour-accent-light);
+}
+
+[data-theme="soundcloud"] .video-player-seek-bar-thumb {
+	background-color: var(--colour-accent-light);
+	box-shadow: 0px 0px 0px 4px rgba(167, 139, 250, 0.25);
+}
+
+[data-theme="soundcloud"] .video-player-seek-bar-thumbnail-preview {
+	border: var(--border-width-thin) solid rgba(255, 255, 255, 0.3);
+}
+
+[data-theme="soundcloud"] .video-player-control-button {
+	color: #ffffff;
+}
+
+[data-theme="soundcloud"] .video-player-control-button:hover {
+	background-color: rgba(255, 255, 255, 0.14);
+}
+
+[data-theme="soundcloud"] .video-player-time-display {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="soundcloud"] .video-player-settings-menu {
+	background-color: rgba(30, 30, 36, 0.82);
+	color: #ffffff;
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+	border: var(--border-width-thin) solid rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="soundcloud"] .video-player-settings-menu-item:hover,
+[data-theme="soundcloud"] .video-player-playback-speed-option:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="soundcloud"] .video-player-quality-badge {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="soundcloud"] .video-player-gesture-feedback-indicator {
+	background-color: rgba(20, 22, 28, 0.55);
+	color: #ffffff;
+}
+
+[data-theme="soundcloud"] .sheet-menu-overlay {
+	background-color: rgba(20, 22, 28, 0.32);
+}
+
+[data-theme="soundcloud"] .sheet-menu-container {
+	background-color: var(--colour-glass-surface-strong);
+	color: var(--colour-text-primary);
+	border-block-start: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="soundcloud"] .sheet-menu-drag-handle-bar {
+	background-color: var(--colour-text-disabled);
+}
+
+[data-theme="soundcloud"] .sheet-menu-title {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .sheet-menu-footer {
+	border-block-start-color: var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] .sheet-menu-list-item {
+	border-block-end-color: var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] .color-picker-overlay {
+	background-color: rgba(20, 22, 28, 0.35);
+}
+
+[data-theme="soundcloud"] .color-picker-container {
+	background-color: var(--colour-glass-surface-strong);
+	color: var(--colour-text-primary);
+	border: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="soundcloud"] .color-picker-title {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .color-picker-close-button:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="soundcloud"] .color-picker-saturation-lightness-canvas {
+	border: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] .color-picker-saturation-lightness-canvas-cursor,
+[data-theme="soundcloud"] .color-picker-slider-thumb {
+	border-color: #ffffff;
+}
+
+[data-theme="soundcloud"] .color-picker-hue-slider-container {
+	background-image: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+}
+
+[data-theme="soundcloud"] .color-picker-alpha-slider-container {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .color-picker-swatch-tile {
+	border-color: var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] .color-picker-swatch-tile-selected {
+	border-color: var(--colour-accent);
+}
+
+[data-theme="soundcloud"] .color-picker-swatch-tile-add-custom {
+	background-color: var(--colour-surface-muted);
+	border-color: var(--colour-border-strong);
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .color-picker-preview-swatch {
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .color-picker-input-format-tab {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .color-picker-input-format-tab[data-active="true"] {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="soundcloud"] .color-picker-input-field {
+	background-color: var(--colour-surface-muted);
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .color-picker-input-field-label {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .color-picker-footer {
+	border-block-start-color: var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] .color-picker-eyedropper-button {
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="soundcloud"] .color-picker-eyedropper-button:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="soundcloud"] .audio-player-container {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .audio-player-play-button {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="soundcloud"] .audio-player-waveform-bar {
+	color: var(--colour-accent-light);
+}
+
+[data-theme="soundcloud"] dialog {
+	background-color: var(--colour-surface-level-one);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] dialog::backdrop {
+	background-color: rgba(20, 22, 28, 0.35);
+}
+
+[data-theme="soundcloud"] details.disclosure-panel {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="soundcloud"] details.disclosure-panel summary {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] details.disclosure-panel summary:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="soundcloud"] details.disclosure-panel[open] summary {
+	border-block-end-color: var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] figcaption {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .image-gallery-item {
+	background-color: var(--colour-surface-muted);
+	box-shadow: var(--elevation-level-one);
+}
+
+[data-theme="soundcloud"] .lightbox-overlay {
+	background-color: rgba(10, 10, 14, 0.9);
+}
+
+[data-theme="soundcloud"] .lightbox-close-button,
+[data-theme="soundcloud"] .lightbox-navigation-button {
+	background-color: rgba(255, 255, 255, 0.14);
+	color: #ffffff;
+}
+
+[data-theme="soundcloud"] .lightbox-close-button:hover,
+[data-theme="soundcloud"] .lightbox-navigation-button:hover {
+	background-color: rgba(255, 255, 255, 0.24);
+}
+
+[data-theme="soundcloud"] .extension-popup-container {
+	background-color: var(--colour-background);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="soundcloud"] .extension-popup-header {
+	background-color: var(--colour-glass-surface-strong);
+	backdrop-filter: blur(var(--blur-medium));
+	-webkit-backdrop-filter: blur(var(--blur-medium));
+	border-block-end: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] .extension-popup-footer {
+	border-block-start-color: var(--colour-border-subtle);
+}
+
+[data-theme="soundcloud"] .game-hud-panel {
+	background-color: rgba(20, 22, 28, 0.45);
+	color: #ffffff;
+}
+
+[data-theme="soundcloud"] .game-hud-health-bar-track,
+[data-theme="soundcloud"] .game-hud-experience-bar-track {
+	background-color: rgba(255, 255, 255, 0.16);
+	border-color: rgba(255, 255, 255, 0.24);
+}
+
+[data-theme="soundcloud"] .game-hud-health-bar-fill {
+	background-color: var(--colour-error);
+}
+
+[data-theme="soundcloud"] .game-hud-experience-bar-fill {
+	background-color: var(--colour-accent-light);
+}
+
+[data-theme="soundcloud"] .game-joystick-base {
+	background-color: rgba(20, 22, 28, 0.35);
+}
+
+[data-theme="soundcloud"] .game-joystick-thumb {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="soundcloud"] .game-action-button {
+	background-color: rgba(20, 22, 28, 0.45);
+	color: #ffffff;
+}
+
+[data-theme="soundcloud"] .divider-with-label::before,
+[data-theme="soundcloud"] .divider-with-label::after {
+	background-color: var(--colour-border-standard);
+}
+
+[data-theme="soundcloud"] .divider-with-label-text {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="soundcloud"] .notification-dot::after {
+	background-color: var(--colour-error);
+	border-color: var(--colour-background);
+}
+
+[data-theme="soundcloud"] .skip-to-content-link {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}

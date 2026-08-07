@@ -1,0 +1,1107 @@
+[data-theme="twitch"] {
+	--colour-background: #150e20;
+	--colour-surface-level-one: #241834;
+	--colour-surface-level-two: #302244;
+	--colour-surface-level-three: #3c2c54;
+	--colour-surface-muted: #110b19;
+	--colour-surface-sunken: #0c0812;
+
+	--colour-text-primary: #ece9f1;
+	--colour-text-secondary: #c0b7cd;
+	--colour-text-muted: #9186a2;
+	--colour-text-disabled: #645c70;
+	--colour-text-inverse: #150e20;
+
+	--colour-border-subtle: rgba(255, 255, 255, 0.08);
+	--colour-border-standard: rgba(255, 255, 255, 0.14);
+	--colour-border-strong: rgba(255, 255, 255, 0.24);
+
+	--colour-accent: #9146FF;
+	--colour-accent-hover: #ac74ff;
+	--colour-accent-pressed: #700eff;
+	--colour-accent-light: #c5a1fb;
+	--colour-accent-muted: rgba(145, 70, 255, 0.2);
+	--colour-on-accent: #ffffff;
+	--colour-accent-glow-strong: rgba(145, 70, 255, 0.14);
+	--colour-accent-glow-soft: rgba(145, 70, 255, 0.08);
+
+	--colour-success: #34c07e;
+	--colour-on-success: #14161c;
+	--colour-success-muted: rgba(52, 192, 126, 0.18);
+	--colour-warning: #e8a13f;
+	--colour-on-warning: #14161c;
+	--colour-warning-muted: rgba(232, 161, 63, 0.18);
+	--colour-error: #f0607d;
+	--colour-on-error: #14161c;
+	--colour-error-muted: rgba(240, 96, 125, 0.18);
+	--colour-info: #4fa5f2;
+	--colour-on-info: #14161c;
+	--colour-info-muted: rgba(79, 165, 242, 0.18);
+
+	--colour-shadow: rgba(0, 0, 0, 0.5);
+	--colour-scrollbar-thumb: rgba(255, 255, 255, 0.18);
+	--colour-scrollbar-thumb-hover: rgba(255, 255, 255, 0.3);
+	--colour-selection-background: rgba(145, 70, 255, 0.3);
+	--colour-selection-text: #ece9f1;
+	--colour-focus-ring: #c5a1fb;
+	--colour-skeleton: #9186a2;
+
+	--colour-glass-surface: rgba(36, 24, 52, 0.55);
+	--colour-glass-surface-strong: rgba(36, 24, 52, 0.78);
+	--colour-glass-border: rgba(255, 255, 255, 0.1);
+	--colour-glass-highlight: rgba(255, 255, 255, 0.06);
+	--colour-glass-shadow: rgba(0, 0, 0, 0.5);
+
+	--icon-tint-filter: invert(39%) sepia(40%) saturate(578%) hue-rotate(214deg) brightness(100%) contrast(100%);
+
+	color-scheme: dark;
+
+	--elevation-level-one: 0px 1px 2px var(--colour-shadow), 0px 1px 3px var(--colour-shadow);
+	--elevation-level-two: 0px 2px 4px var(--colour-shadow), 0px 4px 6px var(--colour-shadow);
+	--elevation-level-three: 0px 4px 8px var(--colour-shadow), 0px 8px 16px var(--colour-shadow);
+	--elevation-level-four: 0px 8px 16px var(--colour-shadow), 0px 16px 24px var(--colour-shadow);
+	--elevation-level-five: 0px 16px 24px var(--colour-shadow), 0px 24px 40px var(--colour-shadow);
+}
+
+[data-theme="twitch"] .icon-canvas img,
+[data-theme="twitch"] .icon-canvas svg,
+[data-theme="twitch"] .icon-canvas picture {
+	filter: var(--icon-tint-filter);
+}
+
+[data-theme="twitch"] html,
+[data-theme="twitch"] body {
+	background-color: var(--colour-background);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] body {
+	background-image: radial-gradient(circle at 15% -10%, var(--colour-accent-glow-strong), transparent 45%),
+		radial-gradient(circle at 85% 110%, var(--colour-accent-glow-soft), transparent 40%);
+	background-attachment: fixed;
+}
+
+[data-theme="twitch"] ::selection {
+	background-color: var(--colour-selection-background);
+	color: var(--colour-selection-text);
+}
+
+[data-theme="twitch"] :focus-visible {
+	outline-color: var(--colour-focus-ring);
+}
+
+[data-theme="twitch"] ::-webkit-scrollbar-thumb {
+	background-color: var(--colour-scrollbar-thumb);
+}
+
+[data-theme="twitch"] ::-webkit-scrollbar-thumb:hover {
+	background-color: var(--colour-scrollbar-thumb-hover);
+}
+
+[data-theme="twitch"] hr {
+	border-block-start-color: var(--colour-border-standard);
+}
+
+[data-theme="twitch"] mark {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] code,
+[data-theme="twitch"] kbd,
+[data-theme="twitch"] samp,
+[data-theme="twitch"] .text-code {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-accent-pressed);
+	border-color: var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] kbd {
+	background-color: var(--colour-surface-level-one);
+	color: var(--colour-text-secondary);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="twitch"] pre {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-text-primary);
+	border: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] blockquote {
+	border-inline-start-color: var(--colour-accent);
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="twitch"] blockquote footer {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .link-standard,
+[data-theme="twitch"] .link-underline,
+[data-theme="twitch"] .link-quiet {
+	color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .link-standard:hover,
+[data-theme="twitch"] .link-underline:hover {
+	color: var(--colour-accent-hover);
+}
+
+[data-theme="twitch"] .link-button-style {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="twitch"] .link-button-style:hover {
+	background-color: var(--colour-accent-muted);
+	filter: brightness(0.97);
+}
+
+[data-theme="twitch"] .list-divided > * + * {
+	border-block-start-color: var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] .horizontal-rule-thick {
+	border-block-start-color: var(--colour-border-strong);
+}
+
+[data-theme="twitch"] .button-variant-filled {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="twitch"] .button-variant-filled:hover {
+	background-color: var(--colour-accent-hover);
+}
+
+[data-theme="twitch"] .button-variant-filled:active {
+	background-color: var(--colour-accent-pressed);
+}
+
+[data-theme="twitch"] .button-variant-outlined {
+	border-color: var(--colour-accent);
+	color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .button-variant-outlined:hover {
+	background-color: var(--colour-accent-muted);
+}
+
+[data-theme="twitch"] .button-variant-ghost {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .button-variant-ghost:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="twitch"] .button-variant-text {
+	color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .button-variant-elevated {
+	background-color: var(--colour-surface-level-one);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .button-group,
+[data-theme="twitch"] .button-group-vertical {
+	box-shadow: var(--elevation-level-one);
+}
+
+[data-theme="twitch"] .button-group .button,
+[data-theme="twitch"] .button-group-vertical .button {
+	border-color: var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] .floating-action-button {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="twitch"] .floating-action-button:hover {
+	background-color: var(--colour-accent-hover);
+}
+
+[data-theme="twitch"] .form-field-label {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .form-field-required-marker {
+	color: var(--colour-error);
+}
+
+[data-theme="twitch"] .form-field-helper-text {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .form-field-error-text {
+	color: var(--colour-error);
+}
+
+[data-theme="twitch"] .text-field,
+[data-theme="twitch"] .text-area-field,
+[data-theme="twitch"] .select-field,
+[data-theme="twitch"] .number-stepper-input {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .text-field:focus-visible,
+[data-theme="twitch"] .text-area-field:focus-visible,
+[data-theme="twitch"] .select-field:focus-visible {
+	border-color: var(--colour-accent);
+	outline-color: var(--colour-focus-ring);
+}
+
+[data-theme="twitch"] .text-field-invalid {
+	border-color: var(--colour-error);
+}
+
+[data-theme="twitch"] .input-group {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="twitch"] .input-group-addon {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .search-field-clear-button:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="twitch"] .floating-label-field-label {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .floating-label-field .text-field:focus ~ .floating-label-field-label,
+[data-theme="twitch"] .floating-label-field .text-field:not(:placeholder-shown) ~ .floating-label-field-label {
+	color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .checkbox-field-input,
+[data-theme="twitch"] .radio-field-input {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="twitch"] .checkbox-field-input::after {
+	border-color: var(--colour-on-accent);
+}
+
+[data-theme="twitch"] .checkbox-field-input:checked,
+[data-theme="twitch"] .checkbox-field-input:indeterminate {
+	background-color: var(--colour-accent);
+	border-color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .checkbox-field-input:indeterminate::after {
+	background-color: var(--colour-on-accent);
+}
+
+[data-theme="twitch"] .radio-field-input:checked {
+	border-color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .radio-field-input::after {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .switch-toggle-input {
+	background-color: var(--colour-surface-sunken);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="twitch"] .switch-toggle-input::after {
+	background-color: var(--colour-surface-level-one);
+	box-shadow: var(--elevation-level-one);
+}
+
+[data-theme="twitch"] .switch-toggle-input:checked {
+	background-color: var(--colour-accent);
+	border-color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .range-slider-field {
+	background-color: var(--colour-surface-sunken);
+}
+
+[data-theme="twitch"] .range-slider-field::-webkit-slider-thumb {
+	background-color: var(--colour-accent);
+	border-color: var(--colour-surface-level-one);
+}
+
+[data-theme="twitch"] .range-slider-field::-moz-range-thumb {
+	background-color: var(--colour-accent);
+	border-color: var(--colour-surface-level-one);
+}
+
+[data-theme="twitch"] .file-upload-dropzone {
+	background-color: var(--colour-surface-muted);
+	border-color: var(--colour-border-strong);
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="twitch"] .file-upload-dropzone-active {
+	border-color: var(--colour-accent);
+	background-color: var(--colour-accent-muted);
+}
+
+[data-theme="twitch"] .file-upload-list-item {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="twitch"] .number-stepper-field {
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="twitch"] .number-stepper-button {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .number-stepper-button:hover {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent);
+}
+
+[data-theme="twitch"] fieldset.form-fieldset {
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="twitch"] legend.form-legend {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .navigation-bar {
+	background-color: var(--colour-glass-surface);
+	border-block-end: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-overlay));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-overlay));
+	box-shadow: 0px 1px 0px var(--colour-glass-highlight) inset;
+}
+
+[data-theme="twitch"] .navigation-bar-brand {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .navigation-bar-link {
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="twitch"] .navigation-bar-link:hover,
+[data-theme="twitch"] .navigation-bar-link-active {
+	color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .navigation-bar-link::after {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .navigation-bar-links {
+	background-color: var(--colour-glass-surface-strong);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="twitch"] .navigation-bar-toggle-button-line {
+	background-color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .sidebar-navigation {
+	background-color: var(--colour-surface-level-one);
+	border-inline-end: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] .sidebar-navigation-item {
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="twitch"] .sidebar-navigation-item:hover {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .sidebar-navigation-item[data-active="true"] {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="twitch"] .sidebar-navigation-section-label {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .bottom-tab-bar {
+	background-color: var(--colour-glass-surface-strong);
+	border-block-start: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="twitch"] .bottom-tab-bar-item {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .bottom-tab-bar-item-active {
+	color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .breadcrumb-item {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .breadcrumb-item:last-child {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .breadcrumb-separator {
+	color: var(--colour-text-disabled);
+}
+
+[data-theme="twitch"] .pagination-item {
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="twitch"] .pagination-item:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="twitch"] .pagination-item-active {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="twitch"] .tabs-list {
+	border-block-end-color: var(--colour-border-standard);
+}
+
+[data-theme="twitch"] .tabs-list-vertical {
+	border-inline-end-color: var(--colour-border-standard);
+}
+
+[data-theme="twitch"] .tabs-list-item {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .tabs-list-item:hover {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .tabs-list-item-active {
+	color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .tabs-list-item::after {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .stepper-wizard-step-circle {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .stepper-wizard-step[data-complete="true"] .stepper-wizard-step-circle,
+[data-theme="twitch"] .stepper-wizard-step[data-active="true"] .stepper-wizard-step-circle {
+	background-color: var(--colour-accent);
+	border-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="twitch"] .stepper-wizard-connector {
+	background-color: var(--colour-border-standard);
+}
+
+[data-theme="twitch"] .stepper-wizard-step[data-complete="true"] .stepper-wizard-connector {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .card {
+	background-color: var(--colour-surface-level-one);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .card-variant-outlined {
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="twitch"] .card-variant-filled {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="twitch"] .card-variant-elevated {
+	background-color: var(--colour-glass-surface-strong);
+	backdrop-filter: blur(var(--blur-medium));
+	-webkit-backdrop-filter: blur(var(--blur-medium));
+	border: var(--border-width-thin) solid var(--colour-glass-border);
+}
+
+[data-theme="twitch"] .card-subtitle {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .table-standard thead th {
+	color: var(--colour-text-secondary);
+	border-block-end-color: var(--colour-border-strong);
+}
+
+[data-theme="twitch"] .table-standard tbody td {
+	border-block-end-color: var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] .table-standard tbody tr:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="twitch"] .table-striped tbody tr:nth-child(even) {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="twitch"] .table-bordered td,
+[data-theme="twitch"] .table-bordered th {
+	border-color: var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] .table-sticky-header thead {
+	background-color: var(--colour-surface-level-one);
+}
+
+[data-theme="twitch"] .table-container {
+	background-color: var(--colour-surface-level-one);
+	border: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] .accordion-item {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="twitch"] .accordion-trigger {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .accordion-trigger:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="twitch"] .accordion-trigger-icon {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .tooltip-bubble {
+	background-color: var(--colour-text-primary);
+	color: var(--colour-background);
+	backdrop-filter: blur(var(--blur-small));
+	-webkit-backdrop-filter: blur(var(--blur-small));
+}
+
+[data-theme="twitch"] .popover-panel,
+[data-theme="twitch"] .dropdown-menu {
+	background-color: var(--colour-glass-surface-strong);
+	border: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="twitch"] .dropdown-menu-item {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .dropdown-menu-item:hover {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="twitch"] .dropdown-menu-divider {
+	background-color: var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] .alert-banner {
+	background-color: var(--colour-info-muted);
+	border-inline-start-color: var(--colour-info);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .alert-banner-icon {
+	color: var(--colour-info);
+}
+
+[data-theme="twitch"] .alert-banner[data-variant="success"] {
+	background-color: var(--colour-success-muted);
+	border-inline-start-color: var(--colour-success);
+}
+
+[data-theme="twitch"] .alert-banner[data-variant="success"] .alert-banner-icon {
+	color: var(--colour-success);
+}
+
+[data-theme="twitch"] .alert-banner[data-variant="warning"] {
+	background-color: var(--colour-warning-muted);
+	border-inline-start-color: var(--colour-warning);
+}
+
+[data-theme="twitch"] .alert-banner[data-variant="warning"] .alert-banner-icon {
+	color: var(--colour-warning);
+}
+
+[data-theme="twitch"] .alert-banner[data-variant="error"] {
+	background-color: var(--colour-error-muted);
+	border-inline-start-color: var(--colour-error);
+}
+
+[data-theme="twitch"] .alert-banner[data-variant="error"] .alert-banner-icon {
+	color: var(--colour-error);
+}
+
+[data-theme="twitch"] .alert-banner-close-button:hover {
+	background-color: rgba(20, 22, 28, 0.08);
+}
+
+[data-theme="twitch"] .toast-notification {
+	background-color: var(--colour-glass-surface-strong);
+	color: var(--colour-text-primary);
+	border: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="twitch"] .badge {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="twitch"] .badge[data-variant="success"] { background-color: var(--colour-success-muted); color: var(--colour-success); }
+[data-theme="twitch"] .badge[data-variant="warning"] { background-color: var(--colour-warning-muted); color: var(--colour-warning); }
+[data-theme="twitch"] .badge[data-variant="error"] { background-color: var(--colour-error-muted); color: var(--colour-error); }
+[data-theme="twitch"] .badge[data-variant="info"] { background-color: var(--colour-info-muted); color: var(--colour-info); }
+
+[data-theme="twitch"] .badge-dot {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .chip {
+	background-color: var(--colour-surface-muted);
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="twitch"] .chip-removable-button {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .chip-removable-button:hover {
+	background-color: var(--colour-border-standard);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .progress-bar-track {
+	background-color: var(--colour-surface-sunken);
+}
+
+[data-theme="twitch"] .progress-bar-fill {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .circular-progress-track {
+	stroke: var(--colour-surface-sunken);
+}
+
+[data-theme="twitch"] .circular-progress-fill {
+	stroke: var(--colour-accent);
+}
+
+[data-theme="twitch"] .avatar {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="twitch"] .avatar-status-indicator {
+	background-color: var(--colour-text-disabled);
+	border-color: var(--colour-surface-level-one);
+}
+
+[data-theme="twitch"] .avatar-status-indicator[data-status="online"] {
+	background-color: var(--colour-success);
+}
+
+[data-theme="twitch"] .avatar-status-indicator[data-status="away"] {
+	background-color: var(--colour-warning);
+}
+
+[data-theme="twitch"] .avatar-group .avatar {
+	border-color: var(--colour-surface-level-one);
+}
+
+[data-theme="twitch"] .empty-state-container {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .modal-dialog-backdrop {
+	background-color: rgba(20, 22, 28, 0.35);
+}
+
+[data-theme="twitch"] .modal-dialog {
+	background-color: var(--colour-glass-surface-strong);
+	color: var(--colour-text-primary);
+	border: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="twitch"] .modal-dialog-title {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .modal-dialog-close-button:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="twitch"] .modal-dialog-footer {
+	border-block-start: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] .loader-linear {
+	background-color: var(--colour-surface-sunken);
+}
+
+[data-theme="twitch"] .loader-linear-fill {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .loader-circular,
+[data-theme="twitch"] .loader-circular-dual-ring::after {
+	color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .loader-dots-container span {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .skeleton-loader {
+	color: var(--colour-skeleton);
+	background-color: var(--colour-surface-sunken);
+}
+
+[data-theme="twitch"] .video-player-container {
+	background-color: #000000;
+}
+
+[data-theme="twitch"] .video-player-center-play-button {
+	background-color: rgba(20, 22, 28, 0.55);
+	color: #ffffff;
+	backdrop-filter: blur(var(--blur-medium));
+	-webkit-backdrop-filter: blur(var(--blur-medium));
+}
+
+[data-theme="twitch"] .video-player-controls-bar,
+[data-theme="twitch"] .video-player-title-overlay {
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+	color: #ffffff;
+}
+
+[data-theme="twitch"] .video-player-seek-bar-track {
+	background-color: rgba(255, 255, 255, 0.28);
+}
+
+[data-theme="twitch"] .video-player-seek-bar-buffered {
+	background-color: rgba(255, 255, 255, 0.45);
+}
+
+[data-theme="twitch"] .video-player-seek-bar-progress {
+	background-color: var(--colour-accent-light);
+}
+
+[data-theme="twitch"] .video-player-seek-bar-thumb {
+	background-color: var(--colour-accent-light);
+	box-shadow: 0px 0px 0px 4px rgba(167, 139, 250, 0.25);
+}
+
+[data-theme="twitch"] .video-player-seek-bar-thumbnail-preview {
+	border: var(--border-width-thin) solid rgba(255, 255, 255, 0.3);
+}
+
+[data-theme="twitch"] .video-player-control-button {
+	color: #ffffff;
+}
+
+[data-theme="twitch"] .video-player-control-button:hover {
+	background-color: rgba(255, 255, 255, 0.14);
+}
+
+[data-theme="twitch"] .video-player-time-display {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="twitch"] .video-player-settings-menu {
+	background-color: rgba(30, 30, 36, 0.82);
+	color: #ffffff;
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+	border: var(--border-width-thin) solid rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="twitch"] .video-player-settings-menu-item:hover,
+[data-theme="twitch"] .video-player-playback-speed-option:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="twitch"] .video-player-quality-badge {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="twitch"] .video-player-gesture-feedback-indicator {
+	background-color: rgba(20, 22, 28, 0.55);
+	color: #ffffff;
+}
+
+[data-theme="twitch"] .sheet-menu-overlay {
+	background-color: rgba(20, 22, 28, 0.32);
+}
+
+[data-theme="twitch"] .sheet-menu-container {
+	background-color: var(--colour-glass-surface-strong);
+	color: var(--colour-text-primary);
+	border-block-start: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="twitch"] .sheet-menu-drag-handle-bar {
+	background-color: var(--colour-text-disabled);
+}
+
+[data-theme="twitch"] .sheet-menu-title {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .sheet-menu-footer {
+	border-block-start-color: var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] .sheet-menu-list-item {
+	border-block-end-color: var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] .color-picker-overlay {
+	background-color: rgba(20, 22, 28, 0.35);
+}
+
+[data-theme="twitch"] .color-picker-container {
+	background-color: var(--colour-glass-surface-strong);
+	color: var(--colour-text-primary);
+	border: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="twitch"] .color-picker-title {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .color-picker-close-button:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="twitch"] .color-picker-saturation-lightness-canvas {
+	border: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] .color-picker-saturation-lightness-canvas-cursor,
+[data-theme="twitch"] .color-picker-slider-thumb {
+	border-color: #ffffff;
+}
+
+[data-theme="twitch"] .color-picker-hue-slider-container {
+	background-image: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+}
+
+[data-theme="twitch"] .color-picker-alpha-slider-container {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .color-picker-swatch-tile {
+	border-color: var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] .color-picker-swatch-tile-selected {
+	border-color: var(--colour-accent);
+}
+
+[data-theme="twitch"] .color-picker-swatch-tile-add-custom {
+	background-color: var(--colour-surface-muted);
+	border-color: var(--colour-border-strong);
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .color-picker-preview-swatch {
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .color-picker-input-format-tab {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .color-picker-input-format-tab[data-active="true"] {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="twitch"] .color-picker-input-field {
+	background-color: var(--colour-surface-muted);
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .color-picker-input-field-label {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .color-picker-footer {
+	border-block-start-color: var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] .color-picker-eyedropper-button {
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="twitch"] .color-picker-eyedropper-button:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="twitch"] .audio-player-container {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .audio-player-play-button {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="twitch"] .audio-player-waveform-bar {
+	color: var(--colour-accent-light);
+}
+
+[data-theme="twitch"] dialog {
+	background-color: var(--colour-surface-level-one);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] dialog::backdrop {
+	background-color: rgba(20, 22, 28, 0.35);
+}
+
+[data-theme="twitch"] details.disclosure-panel {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="twitch"] details.disclosure-panel summary {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] details.disclosure-panel summary:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="twitch"] details.disclosure-panel[open] summary {
+	border-block-end-color: var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] figcaption {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .image-gallery-item {
+	background-color: var(--colour-surface-muted);
+	box-shadow: var(--elevation-level-one);
+}
+
+[data-theme="twitch"] .lightbox-overlay {
+	background-color: rgba(10, 10, 14, 0.9);
+}
+
+[data-theme="twitch"] .lightbox-close-button,
+[data-theme="twitch"] .lightbox-navigation-button {
+	background-color: rgba(255, 255, 255, 0.14);
+	color: #ffffff;
+}
+
+[data-theme="twitch"] .lightbox-close-button:hover,
+[data-theme="twitch"] .lightbox-navigation-button:hover {
+	background-color: rgba(255, 255, 255, 0.24);
+}
+
+[data-theme="twitch"] .extension-popup-container {
+	background-color: var(--colour-background);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="twitch"] .extension-popup-header {
+	background-color: var(--colour-glass-surface-strong);
+	backdrop-filter: blur(var(--blur-medium));
+	-webkit-backdrop-filter: blur(var(--blur-medium));
+	border-block-end: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] .extension-popup-footer {
+	border-block-start-color: var(--colour-border-subtle);
+}
+
+[data-theme="twitch"] .game-hud-panel {
+	background-color: rgba(20, 22, 28, 0.45);
+	color: #ffffff;
+}
+
+[data-theme="twitch"] .game-hud-health-bar-track,
+[data-theme="twitch"] .game-hud-experience-bar-track {
+	background-color: rgba(255, 255, 255, 0.16);
+	border-color: rgba(255, 255, 255, 0.24);
+}
+
+[data-theme="twitch"] .game-hud-health-bar-fill {
+	background-color: var(--colour-error);
+}
+
+[data-theme="twitch"] .game-hud-experience-bar-fill {
+	background-color: var(--colour-accent-light);
+}
+
+[data-theme="twitch"] .game-joystick-base {
+	background-color: rgba(20, 22, 28, 0.35);
+}
+
+[data-theme="twitch"] .game-joystick-thumb {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="twitch"] .game-action-button {
+	background-color: rgba(20, 22, 28, 0.45);
+	color: #ffffff;
+}
+
+[data-theme="twitch"] .divider-with-label::before,
+[data-theme="twitch"] .divider-with-label::after {
+	background-color: var(--colour-border-standard);
+}
+
+[data-theme="twitch"] .divider-with-label-text {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="twitch"] .notification-dot::after {
+	background-color: var(--colour-error);
+	border-color: var(--colour-background);
+}
+
+[data-theme="twitch"] .skip-to-content-link {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}

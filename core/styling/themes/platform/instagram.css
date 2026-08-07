@@ -1,0 +1,1169 @@
+[data-theme="instagram"] {
+	--colour-background: #1e1018;
+	--colour-surface-level-one: #311b28;
+	--colour-surface-level-two: #412535;
+	--colour-surface-level-three: #503042;
+	--colour-surface-muted: #170c13;
+	--colour-surface-sunken: #11090d;
+
+	--colour-text-primary: #f0eaee;
+	--colour-text-secondary: #cab9c3;
+	--colour-text-muted: #9f8995;
+	--colour-text-disabled: #6e5e67;
+	--colour-text-inverse: #1e1018;
+
+	--colour-border-subtle: rgba(255, 255, 255, 0.08);
+	--colour-border-standard: rgba(255, 255, 255, 0.14);
+	--colour-border-strong: rgba(255, 255, 255, 0.24);
+
+	--colour-accent: #C13584;
+	--colour-accent-hover: #d4509a;
+	--colour-accent-pressed: #972766;
+	--colour-accent-light: #d27bac;
+	--colour-accent-muted: rgba(193, 53, 132, 0.2);
+	--colour-on-accent: #ffffff;
+	--colour-accent-glow-strong: rgba(193, 53, 132, 0.14);
+	--colour-accent-glow-soft: rgba(193, 53, 132, 0.08);
+	--colour-accent-gradient: linear-gradient(45deg, #405DE6 0%, #5851DB 14%, #833AB4 28%, #C13584 48%, #E1306C 66%, #FD1D1D 82%, #F77737 92%, #FCAF45 100%);
+
+	--colour-success: #34c07e;
+	--colour-on-success: #14161c;
+	--colour-success-muted: rgba(52, 192, 126, 0.18);
+	--colour-warning: #e8a13f;
+	--colour-on-warning: #14161c;
+	--colour-warning-muted: rgba(232, 161, 63, 0.18);
+	--colour-error: #f0607d;
+	--colour-on-error: #14161c;
+	--colour-error-muted: rgba(240, 96, 125, 0.18);
+	--colour-info: #4fa5f2;
+	--colour-on-info: #14161c;
+	--colour-info-muted: rgba(79, 165, 242, 0.18);
+
+	--colour-shadow: rgba(0, 0, 0, 0.5);
+	--colour-scrollbar-thumb: rgba(255, 255, 255, 0.18);
+	--colour-scrollbar-thumb-hover: rgba(255, 255, 255, 0.3);
+	--colour-selection-background: rgba(193, 53, 132, 0.3);
+	--colour-selection-text: #f0eaee;
+	--colour-focus-ring: #d27bac;
+	--colour-skeleton: #9f8995;
+
+	--colour-glass-surface: rgba(49, 27, 40, 0.55);
+	--colour-glass-surface-strong: rgba(49, 27, 40, 0.78);
+	--colour-glass-border: rgba(255, 255, 255, 0.1);
+	--colour-glass-highlight: rgba(255, 255, 255, 0.06);
+	--colour-glass-shadow: rgba(0, 0, 0, 0.5);
+
+	--icon-tint-filter: invert(59%) sepia(62%) saturate(369%) hue-rotate(293deg) brightness(152%) contrast(90%);
+
+	color-scheme: dark;
+
+	--elevation-level-one: 0px 1px 2px var(--colour-shadow), 0px 1px 3px var(--colour-shadow);
+	--elevation-level-two: 0px 2px 4px var(--colour-shadow), 0px 4px 6px var(--colour-shadow);
+	--elevation-level-three: 0px 4px 8px var(--colour-shadow), 0px 8px 16px var(--colour-shadow);
+	--elevation-level-four: 0px 8px 16px var(--colour-shadow), 0px 16px 24px var(--colour-shadow);
+	--elevation-level-five: 0px 16px 24px var(--colour-shadow), 0px 24px 40px var(--colour-shadow);
+}
+
+[data-theme="instagram"] .icon-canvas img,
+[data-theme="instagram"] .icon-canvas svg,
+[data-theme="instagram"] .icon-canvas picture {
+	filter: var(--icon-tint-filter);
+}
+
+[data-theme="instagram"] html,
+[data-theme="instagram"] body {
+	background-color: var(--colour-background);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] body {
+	background-image: radial-gradient(circle at 15% -10%, var(--colour-accent-glow-strong), transparent 45%),
+		radial-gradient(circle at 85% 110%, var(--colour-accent-glow-soft), transparent 40%);
+	background-attachment: fixed;
+}
+
+[data-theme="instagram"] ::selection {
+	background-color: var(--colour-selection-background);
+	color: var(--colour-selection-text);
+}
+
+[data-theme="instagram"] :focus-visible {
+	outline-color: var(--colour-focus-ring);
+}
+
+[data-theme="instagram"] ::-webkit-scrollbar-thumb {
+	background-color: var(--colour-scrollbar-thumb);
+}
+
+[data-theme="instagram"] ::-webkit-scrollbar-thumb:hover {
+	background-color: var(--colour-scrollbar-thumb-hover);
+}
+
+[data-theme="instagram"] hr {
+	border-block-start-color: var(--colour-border-standard);
+}
+
+[data-theme="instagram"] mark {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] code,
+[data-theme="instagram"] kbd,
+[data-theme="instagram"] samp,
+[data-theme="instagram"] .text-code {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-accent-pressed);
+	border-color: var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] kbd {
+	background-color: var(--colour-surface-level-one);
+	color: var(--colour-text-secondary);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="instagram"] pre {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-text-primary);
+	border: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] blockquote {
+	border-inline-start-color: var(--colour-accent);
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="instagram"] blockquote footer {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .link-standard,
+[data-theme="instagram"] .link-underline,
+[data-theme="instagram"] .link-quiet {
+	color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .link-standard:hover,
+[data-theme="instagram"] .link-underline:hover {
+	color: var(--colour-accent-hover);
+}
+
+[data-theme="instagram"] .link-button-style {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="instagram"] .link-button-style:hover {
+	background-color: var(--colour-accent-muted);
+	filter: brightness(0.97);
+}
+
+[data-theme="instagram"] .list-divided > * + * {
+	border-block-start-color: var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] .horizontal-rule-thick {
+	border-block-start-color: var(--colour-border-strong);
+}
+
+[data-theme="instagram"] .button-variant-filled {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="instagram"] .button-variant-filled:hover {
+	background-color: var(--colour-accent-hover);
+}
+
+[data-theme="instagram"] .button-variant-filled:active {
+	background-color: var(--colour-accent-pressed);
+}
+
+[data-theme="instagram"] .button-variant-outlined {
+	border-color: var(--colour-accent);
+	color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .button-variant-outlined:hover {
+	background-color: var(--colour-accent-muted);
+}
+
+[data-theme="instagram"] .button-variant-ghost {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .button-variant-ghost:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="instagram"] .button-variant-text {
+	color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .button-variant-elevated {
+	background-color: var(--colour-surface-level-one);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .button-group,
+[data-theme="instagram"] .button-group-vertical {
+	box-shadow: var(--elevation-level-one);
+}
+
+[data-theme="instagram"] .button-group .button,
+[data-theme="instagram"] .button-group-vertical .button {
+	border-color: var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] .floating-action-button {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="instagram"] .floating-action-button:hover {
+	background-color: var(--colour-accent-hover);
+}
+
+[data-theme="instagram"] .form-field-label {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .form-field-required-marker {
+	color: var(--colour-error);
+}
+
+[data-theme="instagram"] .form-field-helper-text {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .form-field-error-text {
+	color: var(--colour-error);
+}
+
+[data-theme="instagram"] .text-field,
+[data-theme="instagram"] .text-area-field,
+[data-theme="instagram"] .select-field,
+[data-theme="instagram"] .number-stepper-input {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .text-field:focus-visible,
+[data-theme="instagram"] .text-area-field:focus-visible,
+[data-theme="instagram"] .select-field:focus-visible {
+	border-color: var(--colour-accent);
+	outline-color: var(--colour-focus-ring);
+}
+
+[data-theme="instagram"] .text-field-invalid {
+	border-color: var(--colour-error);
+}
+
+[data-theme="instagram"] .input-group {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="instagram"] .input-group-addon {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .search-field-clear-button:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="instagram"] .floating-label-field-label {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .floating-label-field .text-field:focus ~ .floating-label-field-label,
+[data-theme="instagram"] .floating-label-field .text-field:not(:placeholder-shown) ~ .floating-label-field-label {
+	color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .checkbox-field-input,
+[data-theme="instagram"] .radio-field-input {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="instagram"] .checkbox-field-input::after {
+	border-color: var(--colour-on-accent);
+}
+
+[data-theme="instagram"] .checkbox-field-input:checked,
+[data-theme="instagram"] .checkbox-field-input:indeterminate {
+	background-color: var(--colour-accent);
+	border-color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .checkbox-field-input:indeterminate::after {
+	background-color: var(--colour-on-accent);
+}
+
+[data-theme="instagram"] .radio-field-input:checked {
+	border-color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .radio-field-input::after {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .switch-toggle-input {
+	background-color: var(--colour-surface-sunken);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="instagram"] .switch-toggle-input::after {
+	background-color: var(--colour-surface-level-one);
+	box-shadow: var(--elevation-level-one);
+}
+
+[data-theme="instagram"] .switch-toggle-input:checked {
+	background-color: var(--colour-accent);
+	border-color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .range-slider-field {
+	background-color: var(--colour-surface-sunken);
+}
+
+[data-theme="instagram"] .range-slider-field::-webkit-slider-thumb {
+	background-color: var(--colour-accent);
+	border-color: var(--colour-surface-level-one);
+}
+
+[data-theme="instagram"] .range-slider-field::-moz-range-thumb {
+	background-color: var(--colour-accent);
+	border-color: var(--colour-surface-level-one);
+}
+
+[data-theme="instagram"] .file-upload-dropzone {
+	background-color: var(--colour-surface-muted);
+	border-color: var(--colour-border-strong);
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="instagram"] .file-upload-dropzone-active {
+	border-color: var(--colour-accent);
+	background-color: var(--colour-accent-muted);
+}
+
+[data-theme="instagram"] .file-upload-list-item {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="instagram"] .number-stepper-field {
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="instagram"] .number-stepper-button {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .number-stepper-button:hover {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent);
+}
+
+[data-theme="instagram"] fieldset.form-fieldset {
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="instagram"] legend.form-legend {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .navigation-bar {
+	background-color: var(--colour-glass-surface);
+	border-block-end: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-overlay));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-overlay));
+	box-shadow: 0px 1px 0px var(--colour-glass-highlight) inset;
+}
+
+[data-theme="instagram"] .navigation-bar-brand {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .navigation-bar-link {
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="instagram"] .navigation-bar-link:hover,
+[data-theme="instagram"] .navigation-bar-link-active {
+	color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .navigation-bar-link::after {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .navigation-bar-links {
+	background-color: var(--colour-glass-surface-strong);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="instagram"] .navigation-bar-toggle-button-line {
+	background-color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .sidebar-navigation {
+	background-color: var(--colour-surface-level-one);
+	border-inline-end: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] .sidebar-navigation-item {
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="instagram"] .sidebar-navigation-item:hover {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .sidebar-navigation-item[data-active="true"] {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="instagram"] .sidebar-navigation-section-label {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .bottom-tab-bar {
+	background-color: var(--colour-glass-surface-strong);
+	border-block-start: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="instagram"] .bottom-tab-bar-item {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .bottom-tab-bar-item-active {
+	color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .breadcrumb-item {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .breadcrumb-item:last-child {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .breadcrumb-separator {
+	color: var(--colour-text-disabled);
+}
+
+[data-theme="instagram"] .pagination-item {
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="instagram"] .pagination-item:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="instagram"] .pagination-item-active {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="instagram"] .tabs-list {
+	border-block-end-color: var(--colour-border-standard);
+}
+
+[data-theme="instagram"] .tabs-list-vertical {
+	border-inline-end-color: var(--colour-border-standard);
+}
+
+[data-theme="instagram"] .tabs-list-item {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .tabs-list-item:hover {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .tabs-list-item-active {
+	color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .tabs-list-item::after {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .stepper-wizard-step-circle {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .stepper-wizard-step[data-complete="true"] .stepper-wizard-step-circle,
+[data-theme="instagram"] .stepper-wizard-step[data-active="true"] .stepper-wizard-step-circle {
+	background-color: var(--colour-accent);
+	border-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="instagram"] .stepper-wizard-connector {
+	background-color: var(--colour-border-standard);
+}
+
+[data-theme="instagram"] .stepper-wizard-step[data-complete="true"] .stepper-wizard-connector {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .card {
+	background-color: var(--colour-surface-level-one);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .card-variant-outlined {
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="instagram"] .card-variant-filled {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="instagram"] .card-variant-elevated {
+	background-color: var(--colour-glass-surface-strong);
+	backdrop-filter: blur(var(--blur-medium));
+	-webkit-backdrop-filter: blur(var(--blur-medium));
+	border: var(--border-width-thin) solid var(--colour-glass-border);
+}
+
+[data-theme="instagram"] .card-subtitle {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .table-standard thead th {
+	color: var(--colour-text-secondary);
+	border-block-end-color: var(--colour-border-strong);
+}
+
+[data-theme="instagram"] .table-standard tbody td {
+	border-block-end-color: var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] .table-standard tbody tr:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="instagram"] .table-striped tbody tr:nth-child(even) {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="instagram"] .table-bordered td,
+[data-theme="instagram"] .table-bordered th {
+	border-color: var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] .table-sticky-header thead {
+	background-color: var(--colour-surface-level-one);
+}
+
+[data-theme="instagram"] .table-container {
+	background-color: var(--colour-surface-level-one);
+	border: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] .accordion-item {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="instagram"] .accordion-trigger {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .accordion-trigger:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="instagram"] .accordion-trigger-icon {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .tooltip-bubble {
+	background-color: var(--colour-text-primary);
+	color: var(--colour-background);
+	backdrop-filter: blur(var(--blur-small));
+	-webkit-backdrop-filter: blur(var(--blur-small));
+}
+
+[data-theme="instagram"] .popover-panel,
+[data-theme="instagram"] .dropdown-menu {
+	background-color: var(--colour-glass-surface-strong);
+	border: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="instagram"] .dropdown-menu-item {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .dropdown-menu-item:hover {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="instagram"] .dropdown-menu-divider {
+	background-color: var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] .alert-banner {
+	background-color: var(--colour-info-muted);
+	border-inline-start-color: var(--colour-info);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .alert-banner-icon {
+	color: var(--colour-info);
+}
+
+[data-theme="instagram"] .alert-banner[data-variant="success"] {
+	background-color: var(--colour-success-muted);
+	border-inline-start-color: var(--colour-success);
+}
+
+[data-theme="instagram"] .alert-banner[data-variant="success"] .alert-banner-icon {
+	color: var(--colour-success);
+}
+
+[data-theme="instagram"] .alert-banner[data-variant="warning"] {
+	background-color: var(--colour-warning-muted);
+	border-inline-start-color: var(--colour-warning);
+}
+
+[data-theme="instagram"] .alert-banner[data-variant="warning"] .alert-banner-icon {
+	color: var(--colour-warning);
+}
+
+[data-theme="instagram"] .alert-banner[data-variant="error"] {
+	background-color: var(--colour-error-muted);
+	border-inline-start-color: var(--colour-error);
+}
+
+[data-theme="instagram"] .alert-banner[data-variant="error"] .alert-banner-icon {
+	color: var(--colour-error);
+}
+
+[data-theme="instagram"] .alert-banner-close-button:hover {
+	background-color: rgba(20, 22, 28, 0.08);
+}
+
+[data-theme="instagram"] .toast-notification {
+	background-color: var(--colour-glass-surface-strong);
+	color: var(--colour-text-primary);
+	border: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="instagram"] .badge {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="instagram"] .badge[data-variant="success"] { background-color: var(--colour-success-muted); color: var(--colour-success); }
+[data-theme="instagram"] .badge[data-variant="warning"] { background-color: var(--colour-warning-muted); color: var(--colour-warning); }
+[data-theme="instagram"] .badge[data-variant="error"] { background-color: var(--colour-error-muted); color: var(--colour-error); }
+[data-theme="instagram"] .badge[data-variant="info"] { background-color: var(--colour-info-muted); color: var(--colour-info); }
+
+[data-theme="instagram"] .badge-dot {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .chip {
+	background-color: var(--colour-surface-muted);
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="instagram"] .chip-removable-button {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .chip-removable-button:hover {
+	background-color: var(--colour-border-standard);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .progress-bar-track {
+	background-color: var(--colour-surface-sunken);
+}
+
+[data-theme="instagram"] .progress-bar-fill {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .circular-progress-track {
+	stroke: var(--colour-surface-sunken);
+}
+
+[data-theme="instagram"] .circular-progress-fill {
+	stroke: var(--colour-accent);
+}
+
+[data-theme="instagram"] .avatar {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="instagram"] .avatar-status-indicator {
+	background-color: var(--colour-text-disabled);
+	border-color: var(--colour-surface-level-one);
+}
+
+[data-theme="instagram"] .avatar-status-indicator[data-status="online"] {
+	background-color: var(--colour-success);
+}
+
+[data-theme="instagram"] .avatar-status-indicator[data-status="away"] {
+	background-color: var(--colour-warning);
+}
+
+[data-theme="instagram"] .avatar-group .avatar {
+	border-color: var(--colour-surface-level-one);
+}
+
+[data-theme="instagram"] .empty-state-container {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .modal-dialog-backdrop {
+	background-color: rgba(20, 22, 28, 0.35);
+}
+
+[data-theme="instagram"] .modal-dialog {
+	background-color: var(--colour-glass-surface-strong);
+	color: var(--colour-text-primary);
+	border: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="instagram"] .modal-dialog-title {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .modal-dialog-close-button:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="instagram"] .modal-dialog-footer {
+	border-block-start: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] .loader-linear {
+	background-color: var(--colour-surface-sunken);
+}
+
+[data-theme="instagram"] .loader-linear-fill {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .loader-circular,
+[data-theme="instagram"] .loader-circular-dual-ring::after {
+	color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .loader-dots-container span {
+	background-color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .skeleton-loader {
+	color: var(--colour-skeleton);
+	background-color: var(--colour-surface-sunken);
+}
+
+[data-theme="instagram"] .video-player-container {
+	background-color: #000000;
+}
+
+[data-theme="instagram"] .video-player-center-play-button {
+	background-color: rgba(20, 22, 28, 0.55);
+	color: #ffffff;
+	backdrop-filter: blur(var(--blur-medium));
+	-webkit-backdrop-filter: blur(var(--blur-medium));
+}
+
+[data-theme="instagram"] .video-player-controls-bar,
+[data-theme="instagram"] .video-player-title-overlay {
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+	color: #ffffff;
+}
+
+[data-theme="instagram"] .video-player-seek-bar-track {
+	background-color: rgba(255, 255, 255, 0.28);
+}
+
+[data-theme="instagram"] .video-player-seek-bar-buffered {
+	background-color: rgba(255, 255, 255, 0.45);
+}
+
+[data-theme="instagram"] .video-player-seek-bar-progress {
+	background-color: var(--colour-accent-light);
+}
+
+[data-theme="instagram"] .video-player-seek-bar-thumb {
+	background-color: var(--colour-accent-light);
+	box-shadow: 0px 0px 0px 4px rgba(167, 139, 250, 0.25);
+}
+
+[data-theme="instagram"] .video-player-seek-bar-thumbnail-preview {
+	border: var(--border-width-thin) solid rgba(255, 255, 255, 0.3);
+}
+
+[data-theme="instagram"] .video-player-control-button {
+	color: #ffffff;
+}
+
+[data-theme="instagram"] .video-player-control-button:hover {
+	background-color: rgba(255, 255, 255, 0.14);
+}
+
+[data-theme="instagram"] .video-player-time-display {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="instagram"] .video-player-settings-menu {
+	background-color: rgba(30, 30, 36, 0.82);
+	color: #ffffff;
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+	border: var(--border-width-thin) solid rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="instagram"] .video-player-settings-menu-item:hover,
+[data-theme="instagram"] .video-player-playback-speed-option:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="instagram"] .video-player-quality-badge {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="instagram"] .video-player-gesture-feedback-indicator {
+	background-color: rgba(20, 22, 28, 0.55);
+	color: #ffffff;
+}
+
+[data-theme="instagram"] .sheet-menu-overlay {
+	background-color: rgba(20, 22, 28, 0.32);
+}
+
+[data-theme="instagram"] .sheet-menu-container {
+	background-color: var(--colour-glass-surface-strong);
+	color: var(--colour-text-primary);
+	border-block-start: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="instagram"] .sheet-menu-drag-handle-bar {
+	background-color: var(--colour-text-disabled);
+}
+
+[data-theme="instagram"] .sheet-menu-title {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .sheet-menu-footer {
+	border-block-start-color: var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] .sheet-menu-list-item {
+	border-block-end-color: var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] .color-picker-overlay {
+	background-color: rgba(20, 22, 28, 0.35);
+}
+
+[data-theme="instagram"] .color-picker-container {
+	background-color: var(--colour-glass-surface-strong);
+	color: var(--colour-text-primary);
+	border: var(--border-width-thin) solid var(--colour-glass-border);
+	backdrop-filter: blur(var(--blur-backdrop-menu));
+	-webkit-backdrop-filter: blur(var(--blur-backdrop-menu));
+}
+
+[data-theme="instagram"] .color-picker-title {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .color-picker-close-button:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="instagram"] .color-picker-saturation-lightness-canvas {
+	border: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] .color-picker-saturation-lightness-canvas-cursor,
+[data-theme="instagram"] .color-picker-slider-thumb {
+	border-color: #ffffff;
+}
+
+[data-theme="instagram"] .color-picker-hue-slider-container {
+	background-image: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+}
+
+[data-theme="instagram"] .color-picker-alpha-slider-container {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .color-picker-swatch-tile {
+	border-color: var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] .color-picker-swatch-tile-selected {
+	border-color: var(--colour-accent);
+}
+
+[data-theme="instagram"] .color-picker-swatch-tile-add-custom {
+	background-color: var(--colour-surface-muted);
+	border-color: var(--colour-border-strong);
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .color-picker-preview-swatch {
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .color-picker-input-format-tab {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .color-picker-input-format-tab[data-active="true"] {
+	background-color: var(--colour-accent-muted);
+	color: var(--colour-accent-pressed);
+}
+
+[data-theme="instagram"] .color-picker-input-field {
+	background-color: var(--colour-surface-muted);
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .color-picker-input-field-label {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .color-picker-footer {
+	border-block-start-color: var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] .color-picker-eyedropper-button {
+	border-color: var(--colour-border-standard);
+	color: var(--colour-text-secondary);
+}
+
+[data-theme="instagram"] .color-picker-eyedropper-button:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="instagram"] .audio-player-container {
+	background-color: var(--colour-surface-muted);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .audio-player-play-button {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="instagram"] .audio-player-waveform-bar {
+	color: var(--colour-accent-light);
+}
+
+[data-theme="instagram"] dialog {
+	background-color: var(--colour-surface-level-one);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] dialog::backdrop {
+	background-color: rgba(20, 22, 28, 0.35);
+}
+
+[data-theme="instagram"] details.disclosure-panel {
+	background-color: var(--colour-surface-level-one);
+	border-color: var(--colour-border-standard);
+}
+
+[data-theme="instagram"] details.disclosure-panel summary {
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] details.disclosure-panel summary:hover {
+	background-color: var(--colour-surface-muted);
+}
+
+[data-theme="instagram"] details.disclosure-panel[open] summary {
+	border-block-end-color: var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] figcaption {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .image-gallery-item {
+	background-color: var(--colour-surface-muted);
+	box-shadow: var(--elevation-level-one);
+}
+
+[data-theme="instagram"] .lightbox-overlay {
+	background-color: rgba(10, 10, 14, 0.9);
+}
+
+[data-theme="instagram"] .lightbox-close-button,
+[data-theme="instagram"] .lightbox-navigation-button {
+	background-color: rgba(255, 255, 255, 0.14);
+	color: #ffffff;
+}
+
+[data-theme="instagram"] .lightbox-close-button:hover,
+[data-theme="instagram"] .lightbox-navigation-button:hover {
+	background-color: rgba(255, 255, 255, 0.24);
+}
+
+[data-theme="instagram"] .extension-popup-container {
+	background-color: var(--colour-background);
+	color: var(--colour-text-primary);
+}
+
+[data-theme="instagram"] .extension-popup-header {
+	background-color: var(--colour-glass-surface-strong);
+	backdrop-filter: blur(var(--blur-medium));
+	-webkit-backdrop-filter: blur(var(--blur-medium));
+	border-block-end: var(--border-width-thin) solid var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] .extension-popup-footer {
+	border-block-start-color: var(--colour-border-subtle);
+}
+
+[data-theme="instagram"] .game-hud-panel {
+	background-color: rgba(20, 22, 28, 0.45);
+	color: #ffffff;
+}
+
+[data-theme="instagram"] .game-hud-health-bar-track,
+[data-theme="instagram"] .game-hud-experience-bar-track {
+	background-color: rgba(255, 255, 255, 0.16);
+	border-color: rgba(255, 255, 255, 0.24);
+}
+
+[data-theme="instagram"] .game-hud-health-bar-fill {
+	background-color: var(--colour-error);
+}
+
+[data-theme="instagram"] .game-hud-experience-bar-fill {
+	background-color: var(--colour-accent-light);
+}
+
+[data-theme="instagram"] .game-joystick-base {
+	background-color: rgba(20, 22, 28, 0.35);
+}
+
+[data-theme="instagram"] .game-joystick-thumb {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="instagram"] .game-action-button {
+	background-color: rgba(20, 22, 28, 0.45);
+	color: #ffffff;
+}
+
+[data-theme="instagram"] .divider-with-label::before,
+[data-theme="instagram"] .divider-with-label::after {
+	background-color: var(--colour-border-standard);
+}
+
+[data-theme="instagram"] .divider-with-label-text {
+	color: var(--colour-text-muted);
+}
+
+[data-theme="instagram"] .notification-dot::after {
+	background-color: var(--colour-error);
+	border-color: var(--colour-background);
+}
+
+[data-theme="instagram"] .skip-to-content-link {
+	background-color: var(--colour-accent);
+	color: var(--colour-on-accent);
+}
+
+[data-theme="instagram"] .button-variant-filled {
+	background-image: var(--colour-accent-gradient);
+	background-color: transparent;
+}
+
+[data-theme="instagram"] .floating-action-button {
+	background-image: var(--colour-accent-gradient);
+	background-color: transparent;
+}
+
+[data-theme="instagram"] .progress-bar-fill {
+	background-image: var(--colour-accent-gradient);
+	background-color: transparent;
+}
+
+[data-theme="instagram"] .loader-linear-fill {
+	background-image: var(--colour-accent-gradient);
+	background-color: transparent;
+}
+
+[data-theme="instagram"] .badge-dot {
+	background-image: var(--colour-accent-gradient);
+	background-color: transparent;
+}
+
+[data-theme="instagram"] .video-player-quality-badge {
+	background-image: var(--colour-accent-gradient);
+	background-color: transparent;
+	color: #ffffff;
+}
+
+[data-theme="instagram"] .skip-to-content-link {
+	background-image: var(--colour-accent-gradient);
+	background-color: transparent;
+}
+
+[data-theme="instagram"] .avatar {
+	background-image: var(--colour-accent-gradient);
+	background-color: transparent;
+	color: #ffffff;
+}
+
+[data-theme="instagram"] .switch-toggle-input:checked {
+	background-image: var(--colour-accent-gradient);
+	background-color: transparent;
+	border-color: transparent;
+}
+
+[data-theme="instagram"] .checkbox-field-input:checked,
+[data-theme="instagram"] .checkbox-field-input:indeterminate {
+	background-image: var(--colour-accent-gradient);
+	background-color: transparent;
+	border-color: transparent;
+}
+
+[data-theme="instagram"] .pagination-item-active {
+	background-image: var(--colour-accent-gradient);
+	background-color: transparent;
+	color: #ffffff;
+}
