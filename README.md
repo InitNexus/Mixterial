@@ -1,3 +1,8 @@
+> [!NOTE]
+> The contents of this repository include our own information and details about our business. If using any contents for personal or enterprise related projects, please replace our details with your own.
+
+---
+
 ### Introduction
 Welcome to *Mixterial*, the repository that contains all universal code, pages, assets and information that we use across everything web related. This includes, but is not limited to:
 
