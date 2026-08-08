@@ -1,0 +1,147 @@
+PRIVACY POLICY
+
+NexusByte Initiative
+
+Effective Date: 08 August 2026, 01:30 UTC
+
+
+1. INTRODUCTION
+This Privacy Policy explains how NexusByte Initiative ("NexusByte Initiative", "we", "us", or "our") collects, uses, stores, shares, and protects information
+in connection with any web page, website, web application, WebView application, web game, browser extension, or other digital product, project, or service
+that we operate (collectively, the "Services").
+
+This Privacy Policy applies to all Users of the Services, regardless of the platform or device used to access them. By using the Services, you acknowledge
+that you have read and understood this Privacy Policy. Where required by applicable law, we will ask for your consent before collecting certain categories of
+information, as described in Section 5.
+
+
+2. SCOPE
+This Privacy Policy covers information collected directly by NexusByte Initiative through the Services. It does not cover the practices of third-party
+websites, applications, or services that may be linked to or integrated with the Services, or third-party translation or analytics providers acting on their
+own behalf. We encourage you to review the privacy policies of any third-party service you interact with.
+
+
+3. INFORMATION WE COLLECT
+We only collect the categories of information described in this section, and only where you have provided consent as described in Section 5, or where
+collection is limited to information strictly necessary to operate the Services (such as your saved theme and language preferences).
+
+3.1 Network Information
+Where consented to, we may collect information about the network and connection through which you access the Services, including but not limited to: your
+approximate network connection type and effective connection speed (for example, the type of connection reported by your browser, such as Wi-Fi or cellular,
+and estimated bandwidth and round-trip latency); whether your device is currently online; the web address, hostname, and protocol of the page you are viewing;
+the referring web address that directed you to the Services, where available; your device's detected time zone and time zone offset; and your Internet
+Protocol (IP) address and associated general geographic location, which may be derived by us or by third-party service providers acting on our behalf.
+
+3.2 Browser Information
+Where consented to, we may collect information about the browser you use to access the Services, including but not limited to: your browser's user agent
+string, name, version, vendor, and rendering engine details; your browser's higher-precision platform, architecture, and version information where made
+available by your browser; your preferred language and full list of configured languages; whether cookies are enabled; whether a "Do Not Track" or similar
+signal has been sent; the number of installed browser plugins and supported file types, where applicable; your browser window and viewport dimensions; the
+character encoding and title of the page being viewed; and whether local storage is available and functioning on your device.
+
+3.3 Device Information
+Where consented to, we may collect information about the device you use to access the Services, including but not limited to: your operating system platform;
+the number of logical processors available to your browser; the approximate amount of device memory available, where made available by your browser; whether
+your device supports touch input, and the maximum number of simultaneous touch points supported; your screen and available screen dimensions, colour depth,
+pixel depth, device pixel ratio, and screen orientation; your device's current battery charge level, charging status, and estimated charge or discharge time,
+where made available by your browser; and your device's preferred colour scheme, reduced motion, and contrast accessibility settings.
+
+3.4 Preference Information
+Regardless of your consent choice, we store your selected theme and selected language locally on your device using browser local storage, so that your
+preferences are remembered and applied consistently across your visits to the Services. This preference information is not transmitted to us or to any third
+party and remains on your device unless you clear your browser storage.
+
+3.5 Consent Records
+We locally record whether you have made a cookie and data collection consent choice, and if so, whether you accepted or declined, along with the date and
+time of that choice, so that we do not repeatedly prompt you for consent.
+
+
+4. HOW INFORMATION IS COLLECTED
+Information described in Section 3 is collected using cookies, browser local storage, and standard web browser and device application programming interfaces
+made available to websites and applications by your browser or operating system. We do not use invasive fingerprinting techniques, and we do not access your
+camera, microphone, precise real-time location, contacts, files, or other sensitive device functionality without separately requesting your explicit
+permission through your browser or device at the time such functionality is used, where applicable.
+
+
+5. YOUR CONSENT CHOICE
+The first time you visit or use a Service, you will be presented with a consent popup asking whether you accept or decline the collection of Network
+Information, Browser Information, and Device Information as described in Sections 3.1 through 3.3.
+
+	(a) If you select "Accept", we will collect and process the categories of information described in Sections 3.1, 3.2, and 3.3, and may share that
+	information with the third-party service providers described in Section 7.
+	(b) If you select "Decline", we will not collect or process the information described in Sections 3.1, 3.2, or 3.3. We will only store your consent
+	choice itself, and your theme and language preferences as described in Sections 3.4 and 3.5, locally on your device.
+	(c) If you close the popup without selecting either option, no consent choice will be recorded, no information described in Sections 3.1 through 3.3 will
+	be collected, and you will be presented with the same popup again the next time you visit or use a Service.
+
+You may change your consent choice at any time through the cookie and data preference controls made available within the Services, where provided, or by
+clearing your browser's local storage for the relevant Service, which will cause the consent popup to be presented again on your next visit.
+
+
+6. HOW WE USE INFORMATION
+Where you have consented to the collection of Network, Browser, and Device Information, we use that information for the following purposes: to help the
+Services load and render more quickly and reliably on your specific device, browser, and network conditions on future visits; to diagnose, troubleshoot,
+and fix technical errors and compatibility issues; to understand aggregate usage patterns and improve the design, performance, accessibility, and
+functionality of the Services; to detect, prevent, and investigate fraud, abuse, and security incidents; and to comply with our legal obligations.
+
+We do not sell your personal information to third parties for their own independent marketing purposes.
+
+
+7. THIRD-PARTY SERVICE PROVIDERS
+Where you have consented to data collection, we may share the information described in Sections 3.1 through 3.3 with third-party service providers who
+process it on our behalf for the purposes described in Section 6, including providers in the following categories: web and product analytics platforms;
+error monitoring and diagnostic platforms; session recording and product experience platforms; tag and consent management platforms; and secure data storage
+and processing infrastructure providers. Each third-party service provider processes information subject to its own privacy policy and data processing terms,
+and we take reasonable steps to work only with providers who maintain appropriate technical and organisational safeguards.
+
+Where a Service offers on-demand text translation as an alternative to a locally stored language file, and you choose to use that feature, the text you
+select for translation may be transmitted to a third-party translation service provider for processing. This occurs only when you actively use the live
+translation feature, and is separate from the theme and language preference storage described in Section 3.4.
+
+
+8. DATA RETENTION
+Information stored locally on your device, such as your theme preference, language preference, and consent record, remains on your device until you clear
+your browser's storage or uninstall the relevant Service. Information collected and transmitted to us or to our third-party service providers under Section 7
+is retained only for as long as reasonably necessary for the purposes described in Section 6, or as required by applicable law, after which it is deleted or
+anonymised.
+
+
+9. DATA SECURITY
+We use reasonable technical and organisational measures designed to protect information from unauthorised access, alteration, disclosure, or destruction.
+However, no method of transmission over the internet or method of electronic storage is completely secure, and we cannot guarantee absolute security.
+
+
+10. YOUR RIGHTS AND CHOICES
+Depending on your jurisdiction, you may have rights in relation to information we hold about you, including the right to request access to, correction of,
+deletion of, or a copy of your information, the right to object to or restrict certain processing, and the right to withdraw consent at any time, which will
+not affect the lawfulness of processing carried out before your withdrawal. You may exercise these rights by contacting us using the details in Section 15,
+or, where applicable, through cookie and privacy preference controls made available within the Services. You also have the right to lodge a complaint with a
+data protection supervisory authority in your jurisdiction.
+
+
+11. CHILDREN'S PRIVACY
+The Services are not directed to children under the age of 13 (or such higher minimum age required in your jurisdiction), and we do not knowingly collect
+information from children below that age. If we become aware that we have collected information from a child without appropriate parental or guardian consent,
+we will take reasonable steps to delete that information.
+
+
+12. INTERNATIONAL DATA TRANSFERS
+Information we collect may be stored, processed, and transferred to countries other than your own, including countries that may have different data protection
+laws than your jurisdiction. Where we transfer information internationally, we take reasonable steps to ensure that it is protected consistently with this
+Privacy Policy and applicable law.
+
+
+13. DO NOT TRACK SIGNALS
+Some browsers offer a "Do Not Track" signal. We currently record whether this signal has been sent as part of Browser Information under Section 3.2, where
+consent has been given, but we do not automatically alter our data collection practices solely in response to that signal at this time, given the lack of a
+common industry standard for its interpretation.
+
+
+14. CHANGES TO THIS PRIVACY POLICY
+We may update this Privacy Policy from time to time. Where changes are material, we will provide reasonable notice, for example by updating the effective date
+at the top of this document. We encourage you to review this Privacy Policy periodically.
+
+
+15. CONTACT US
+If you have any questions about this Privacy Policy or wish to exercise any of your rights described above, please contact us through the official contact
+channels published on our website.

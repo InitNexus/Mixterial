@@ -1,0 +1,196 @@
+TERMS OF SERVICE
+
+NexusByte Initiative
+
+Effective Date: 08 August 2026, 01:30 UTC
+
+
+1. INTRODUCTION AND ACCEPTANCE OF TERMS
+These Terms of Service ("Terms") form a binding agreement between you ("you", "your", or "User") and NexusByte Initiative ("NexusByte Initiative", "we", "us",
+or "our") governing your access to and use of any web page, website, web application, WebView application, web game, browser extension, or other digital
+product, project, or service that we develop, publish, distribute, or otherwise make available (collectively, the "Services").
+
+By accessing, browsing, downloading, installing, or otherwise using any Service, you confirm that you have read, understood, and agree to be bound by these
+Terms, along with our Privacy Policy, our Payments & Refunds policy, and our Legal notices, each of which is incorporated into these Terms by reference. If
+you do not agree to these Terms, you must not access or use the Services.
+
+If you are using the Services on behalf of an organisation, business, or other legal entity, you represent that you have the authority to bind that entity to
+these Terms, and "you" will refer to that entity.
+
+
+2. DEFINITIONS
+2.1 "Services" means any web page, website, web application, WebView application, web game, browser extension, application programming interface, or other
+digital offering made available by NexusByte Initiative, regardless of the platform, device, or distribution channel through which it is accessed.
+
+2.2 "Content" means any text, graphics, images, audio, video, software, code, data, or other material made available through the Services, whether created by
+NexusByte Initiative or by third parties.
+
+2.3 "User Content" means any content that you submit, upload, transmit, or otherwise make available through the Services.
+
+2.4 "Account" means a registered profile or credential set that allows you to access certain features of the Services.
+
+
+3. DESCRIPTION OF SERVICES
+NexusByte Initiative is a technology company that designs, develops, and operates digital products, services, and projects, including but not limited to
+informational and interactive web pages and websites, browser-based and installable web applications, WebView-based mobile or desktop applications,
+browser-based games, and browser extensions.
+
+The specific features, functionality, and availability of any given Service may vary and may be added, modified, or discontinued at our sole discretion,
+at any time, with or without notice, except where notice is required by applicable law.
+
+
+4. ELIGIBILITY
+You must be at least the age of digital consent in your jurisdiction (and in any event no younger than 13 years old, or such higher minimum age required by
+local law) to use the Services. If you are under the age of majority in your jurisdiction, you may only use the Services with the involvement and consent of
+a parent or legal guardian, who agrees to be bound by these Terms on your behalf.
+
+We do not knowingly permit use of the Services by anyone who does not meet these eligibility requirements, and we reserve the right to terminate access where
+we become aware that a User does not meet them.
+
+
+5. ACCOUNTS AND REGISTRATION
+5.1 Certain Services may require you to create an Account. You agree to provide accurate, current, and complete information during registration and to keep
+that information up to date.
+
+5.2 You are solely responsible for maintaining the confidentiality of your Account credentials and for all activity that occurs under your Account. You must
+notify us promptly of any unauthorised use of your Account or any other breach of security.
+
+5.3 We reserve the right to suspend, disable, or terminate any Account that we reasonably believe has been created or used in violation of these Terms,
+applicable law, or for fraudulent or abusive purposes.
+
+
+6. ACCEPTABLE USE POLICY
+When using the Services, you agree that you will not:
+
+	(a) violate any applicable local, national, or international law or regulation;
+	(b) infringe the intellectual property, privacy, or other rights of any third party;
+	(c) upload, transmit, or distribute any malicious code, malware, virus, or other harmful component;
+	(d) attempt to gain unauthorised access to any Service, account, system, or network connected to the Services;
+	(e) interfere with, disrupt, or place an unreasonable load on the infrastructure of the Services;
+	(f) reverse engineer, decompile, or disassemble any Service except to the extent permitted by applicable law;
+	(g) use any automated system, including bots, scrapers, or spiders, to access the Services without our prior written consent;
+	(h) circumvent, disable, or otherwise interfere with any security-related or access-control features of the Services;
+	(i) impersonate any person or entity, or misrepresent your affiliation with any person or entity;
+	(j) use the Services to harass, abuse, threaten, or harm another person; or
+	(k) engage in any conduct that we reasonably determine is harmful to NexusByte Initiative, other Users, or third parties.
+
+We reserve the right to investigate suspected violations of this Acceptable Use Policy and to take any action we deem appropriate, including suspension or
+termination of access and, where necessary, referral to law enforcement.
+
+
+7. USER CONTENT
+7.1 Where a Service allows you to submit User Content, you retain ownership of the intellectual property rights you hold in that User Content.
+
+7.2 By submitting User Content, you grant NexusByte Initiative a worldwide, non-exclusive, royalty-free, sublicensable, and transferable licence to host,
+store, reproduce, modify, adapt, publish, and display that User Content solely for the purpose of operating, providing, promoting, and improving the Services.
+
+7.3 You represent and warrant that you own or have the necessary rights to submit your User Content, and that your User Content does not infringe the rights
+of any third party or violate these Terms.
+
+7.4 We reserve the right, but have no obligation, to monitor, review, remove, or disable access to any User Content at our sole discretion.
+
+
+8. INTELLECTUAL PROPERTY RIGHTS
+8.1 Except for User Content, all right, title, and interest in and to the Services, including all associated software, source code, design, text, graphics,
+trademarks, logos, and other Content, are and will remain the exclusive property of NexusByte Initiative and its licensors.
+
+8.2 Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable licence to access and use the Services
+for their intended personal or internal business purpose. No other rights are granted, whether by implication, estoppel, or otherwise.
+
+8.3 You must not copy, modify, distribute, sell, lease, or create derivative works based on the Services or any Content, except as expressly permitted by us
+in writing or by applicable law.
+
+8.4 Further intellectual property and trademark provisions, including our copyright infringement notification process, are set out in our Legal notices.
+
+
+9. THIRD-PARTY SERVICES AND LINKS
+The Services may contain links to, or integrate with, third-party websites, products, application programming interfaces, or services that are not owned or
+controlled by NexusByte Initiative. We do not endorse and are not responsible for the content, accuracy, or practices of any third-party service. Your use of
+any third-party service is governed solely by the terms and policies of that third party, and we encourage you to review them.
+
+
+10. WEB GAMES
+Where a Service is a web-based game, additional terms may apply, including terms relating to in-game virtual items, currencies, achievements, leaderboards,
+or multiplayer conduct. Virtual items or currency have no monetary value outside of the applicable Service, are not redeemable for real currency, and may be
+modified, suspended, or removed at our discretion, including upon discontinuation of the relevant Service.
+
+
+11. BROWSER EXTENSIONS
+Where a Service is distributed as a browser extension, you acknowledge that its functionality depends on permissions granted through your browser, and that
+browser vendors may impose their own review, distribution, and operational requirements that are outside of our control. We may update, disable, or remove
+browser extension functionality to comply with browser vendor policies or for security reasons.
+
+
+12. WEBVIEW APPLICATIONS
+Where a Service is delivered through a WebView-based application on a mobile or desktop platform, additional platform-specific terms from the relevant
+application store or operating system provider may also apply to your use of that application, in addition to these Terms.
+
+
+13. FEES AND PAYMENT
+Certain Services or features may require payment. All pricing, billing, subscription, and refund terms are set out in our Payments & Refunds policy, which is
+incorporated into these Terms by reference.
+
+
+14. TERMINATION AND SUSPENSION
+14.1 You may stop using the Services, and where applicable, delete your Account, at any time.
+
+14.2 We may suspend or terminate your access to any or all of the Services, with or without notice, if we reasonably believe you have violated these Terms,
+applicable law, or for any other reason at our discretion, including discontinuation of a Service.
+
+14.3 Upon termination, your right to use the affected Service will immediately cease. Provisions of these Terms that by their nature should survive
+termination, including intellectual property, disclaimers, limitation of liability, and indemnification provisions, will survive.
+
+
+15. DISCLAIMERS OF WARRANTIES
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SERVICES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT WARRANTIES OF ANY KIND, WHETHER
+EXPRESS, IMPLIED, OR STATUTORY, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE,
+AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SERVICES WILL BE UNINTERRUPTED, SECURE, ERROR-FREE, OR FREE OF HARMFUL COMPONENTS, OR THAT ANY DEFECTS WILL
+BE CORRECTED.
+
+Nothing in this section is intended to exclude or limit any warranty or right that cannot lawfully be excluded or limited under applicable law.
+
+
+16. LIMITATION OF LIABILITY
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, NEXUSBYTE INITIATIVE AND ITS OFFICERS, EMPLOYEES, AND AFFILIATES WILL NOT BE LIABLE FOR ANY INDIRECT,
+INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, REVENUE, DATA, OR GOODWILL, ARISING OUT OF OR RELATED TO YOUR USE OF,
+OR INABILITY TO USE, THE SERVICES, REGARDLESS OF THE LEGAL THEORY ON WHICH SUCH DAMAGES ARE BASED AND EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, OUR TOTAL AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THESE TERMS OR THE SERVICES WILL NOT EXCEED
+THE GREATER OF (A) THE AMOUNT YOU PAID TO US FOR THE RELEVANT SERVICE IN THE TWELVE MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM, OR (B) ONE HUNDRED
+UNITED STATES DOLLARS (USD 100).
+
+Nothing in these Terms excludes or limits liability that cannot lawfully be excluded or limited under applicable law, including liability for death,
+personal injury, or fraud.
+
+
+17. INDEMNIFICATION
+You agree to indemnify, defend, and hold harmless NexusByte Initiative and its officers, employees, and affiliates from and against any claims, liabilities,
+damages, losses, and expenses, including reasonable legal fees, arising out of or in any way connected with your access to or use of the Services,
+your User Content, or your violation of these Terms or applicable law.
+
+
+18. MODIFICATIONS TO THESE TERMS
+We may revise these Terms from time to time. Where changes are material, we will provide reasonable notice, for example by updating the effective date at the
+top of this document or by other reasonable means. Your continued use of the Services after any revised Terms take effect constitutes your acceptance of those
+changes. If you do not agree to the revised Terms, you must stop using the Services.
+
+
+19. GOVERNING LAW AND DISPUTE RESOLUTION
+These Terms and any dispute arising out of or related to them or the Services will be governed by the laws applicable in the jurisdiction in which NexusByte
+Initiative is established, without regard to conflict of law principles, except where mandatory local consumer protection law provides otherwise for Users
+residing outside that jurisdiction. The parties will first attempt in good faith to resolve any dispute informally before pursuing formal proceedings.
+
+
+20. SEVERABILITY
+If any provision of these Terms is found to be unenforceable or invalid under applicable law, that provision will be limited or eliminated to the minimum
+extent necessary so that the remaining provisions remain in full force and effect.
+
+
+21. ENTIRE AGREEMENT
+These Terms, together with our Privacy Policy, Payments & Refunds policy, and Legal notices, constitute the entire agreement between you and NexusByte
+Initiative regarding the Services and supersede any prior agreements or understandings, whether written or oral, relating to the subject matter herein.
+
+
+22. CONTACT INFORMATION
+If you have any questions about these Terms, please contact us through the official contact channels published on our website.
