@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="midnight">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Please Wait...</title>
+	<link rel="stylesheet" href="https://initnexus.github.io/Mixterial/core/styling/v1.css">
+	<link rel="stylesheet" href="https://initnexus.github.io/Mixterial/core/styling/themes/default/midnight.css">
+</head>
+<body>
+	<div class="display-flex flex-direction-column align-items-center justify-content-center text-align-center gap-large height-screen padding-large">
 
+		<div style="position: relative; inline-size: 128px; block-size: 128px; --loader-image-size: 56px;">
+			<div class="loader-circular" style="inline-size: 128px; block-size: 128px; border-width: 5px;"></div>
+			<img
+				src="https://initnexus.github.io/Mixterial/media/icons/locked.png"
+				alt="Mixterial"
+				class="rounded-circle"
+				style="position: absolute; inset-block-start: 50%; inset-inline-start: 50%; transform: translate(-50%, -50%); inline-size: var(--loader-image-size); block-size: var(--loader-image-size); object-fit: cover;"
+			>
+		</div>
+
+		<div class="margin-top-large">
+			<h3 class="heading-level-three">Please wait</h3>
+			<p class="paragraph-medium" style="opacity: var(--opacity-muted);">We need to verify you are human...</p>
+		</div>
+
+	</div>
+
+	<script src="https://initnexus.github.io/Mixterial/core/scripts/v1.js" defer></script>
+	<script>
+		window.setTimeout(function () {
+			window.location.href = "#";
+		}, 3000);
+	</script>
+</body>
+</html>
