@@ -25,6 +25,7 @@ To summarise everything and keep things short, we have listed the main contents 
 - Core JS ```Everything that the core CSS and CSS themes require as well as management for themes, languages, cookies and data collection```
 - Documentation ```Documentation covering our terms of service, privacy policy, payments & refunds as well as legal notices```
 - Icons ```Icons that we use for all interfaces, sourced from HugeIcons```
+- Pages ```Universal pages that have the same functionality across all products, projects and services```
 
 ---
 
