@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="dark" />
+<meta name="description" content="Payments and Refunds policy for NexusByte Initiative (NBI). Effective 10 October 2026." />
+<title>Payments & Refunds Documentation</title>
+<style>
+  :root{
+    --bg:#0f0f10; --bg-soft:#141416; --surface:#1a1a1c; --surface-2:#202024;
+    --border:#2a2a2e; --border-soft:#232327;
+    --text:#e8e6e3; --text-soft:#a8a5a0; --text-muted:#6e6a65;
+    --accent:#b48ef0; --accent-hover:#c9a8f8; --accent-dim:#2a1f45;
+    --danger:#ff6b6b; --warn:#ffc857; --info:#6bb6ff; --ok:#5fd68a;
+    --radius:10px; --radius-sm:6px; --radius-lg:18px;
+    --header-h:60px;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;border:0}
+  html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 20px);-webkit-text-size-adjust:100%;overflow-x:hidden}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{font-family:var(--font);font-size:15px;line-height:1.65;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;min-height:100vh;overflow-x:hidden}
+  a{color:var(--accent);text-decoration:none;transition:color .15s ease}
+  a:hover{color:var(--accent-hover);text-decoration:underline;text-underline-offset:3px}
+  ::selection{background:var(--accent-dim);color:var(--accent-hover)}
+
+  .site-header{position:sticky;top:0;z-index:50;height:var(--header-h);background:rgba(15,15,16,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border-soft);transition:box-shadow .2s ease}
+  .site-header.is-scrolled{box-shadow:0 6px 20px rgba(0,0,0,.35)}
+  .header-inner{max-width:1200px;margin:0 auto;height:100%;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+  .brand{font-size:17px;font-weight:700;letter-spacing:-.01em;color:var(--text);flex-shrink:0}
+  .brand:hover{color:var(--text);text-decoration:none}
+  .brand span{color:var(--accent)}
+  .header-nav{display:flex;gap:4px;align-items:center}
+  .header-nav a{padding:7px 12px;border-radius:var(--radius-sm);font-size:13.5px;font-weight:500;color:var(--text-soft);transition:background .15s,color .15s;white-space:nowrap}
+  .header-nav a:hover{background:var(--surface);color:var(--text);text-decoration:none}
+  .header-nav a.is-current{background:var(--surface-2);color:var(--accent)}
+  .menu-btn{display:none;width:38px;height:38px;border-radius:var(--radius-sm);background:var(--surface);color:var(--text);cursor:pointer;align-items:center;justify-content:center;font-size:18px;line-height:1;flex-shrink:0}
+  .menu-btn:hover{background:var(--surface-2)}
+
+  .layout{max-width:1200px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:240px 1fr;gap:40px;align-items:start}
+
+  .toc{position:sticky;top:calc(var(--header-h) + 24px);padding:24px 0;font-size:13.5px}
+  .toc-title{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);margin-bottom:12px}
+  .toc nav{display:flex;flex-direction:column;gap:1px}
+  .toc a{display:block;padding:6px 10px;border-radius:var(--radius-sm);color:var(--text-soft);border-left:2px solid transparent;transition:all .15s ease}
+  .toc a:hover{background:var(--surface);color:var(--text);text-decoration:none}
+  .toc a.is-active{background:var(--surface);color:var(--accent);border-left-color:var(--accent);font-weight:500}
+  .toc-handle{display:none}
+  .sheet-backdrop{display:none}
+
+  main{padding:40px 0 80px;min-width:0}
+  .kicker{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+  h1{font-size:clamp(26px,4vw,40px);line-height:1.15;font-weight:800;letter-spacing:-.02em;margin-bottom:16px}
+  .lead{font-size:clamp(15px,2vw,17px);line-height:1.6;color:var(--text-soft);margin-bottom:24px;max-width:65ch}
+  h2{font-size:clamp(19px,3vw,22px);font-weight:700;letter-spacing:-.01em;margin:48px 0 14px;padding-top:8px;scroll-margin-top:calc(var(--header-h) + 20px)}
+  h3{font-size:17px;font-weight:600;margin:24px 0 10px}
+  p{margin-bottom:14px;max-width:70ch}
+  strong{color:var(--text);font-weight:600}
+  em{color:var(--text-soft)}
+
+  .meta{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent);padding:14px 18px;border-radius:var(--radius);margin:24px 0;font-size:13.5px;color:var(--text-soft);line-height:1.7}
+  .meta strong{color:var(--text)}
+  .meta a{font-weight:500}
+
+  ul.list,ol.list{margin:0 0 16px 0;padding-left:22px;max-width:70ch}
+  ul.list{list-style:disc}
+  ol.list{list-style:decimal}
+  ul.list li,ol.list li{margin-bottom:6px;line-height:1.65;color:var(--text-soft)}
+  ul.list li strong,ol.list li strong{color:var(--text)}
+  ul.list li::marker{color:var(--accent)}
+  ol.list li::marker{color:var(--accent);font-weight:600}
+
+  dl{margin:0 0 16px 0;max-width:70ch}
+  dt{font-weight:600;color:var(--text);margin-top:12px}
+  dd{color:var(--text-soft);margin-left:0;padding-left:16px;border-left:2px solid var(--border);line-height:1.6}
+
+  .table-wrap{overflow-x:auto;margin:0 0 20px 0;border:1px solid var(--border);border-radius:var(--radius);-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:420px}
+  th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--border-soft);vertical-align:top}
+  th{background:var(--surface);color:var(--text);font-weight:600;font-size:12.5px;letter-spacing:.02em}
+  td{color:var(--text-soft)}
+  tr:last-child td{border-bottom:none}
+  tr:hover td{background:var(--bg-soft)}
+
+  blockquote{border-left:3px solid var(--accent);background:var(--surface);padding:14px 18px;border-radius:0 var(--radius) var(--radius) 0;margin:20px 0;color:var(--text-soft);font-size:14px;line-height:1.7}
+  blockquote p{margin:0;max-width:none}
+
+  .alert{padding:14px 18px;border-radius:var(--radius);margin:20px 0;font-size:13.5px;line-height:1.7;border:1px solid}
+  .alert-info{background:rgba(107,182,255,.06);border-color:rgba(107,182,255,.25);color:#c9e2ff}
+  .alert-warn{background:rgba(255,200,87,.06);border-color:rgba(255,200,87,.25);color:#ffe6a8}
+  .alert strong{color:inherit}
+
+  hr{border:0;height:1px;background:var(--border);margin:32px 0}
+
+  .site-footer{border-top:1px solid var(--border);margin-top:60px;padding:28px 0;font-size:13px;color:var(--text-muted)}
+  .site-footer .footer-inner{max-width:1200px;margin:0 auto;padding:0 20px}
+  .site-footer p{margin-bottom:6px;max-width:none}
+  .site-footer a{color:var(--text-soft)}
+  .site-footer a:hover{color:var(--accent)}
+
+  code{font-family:var(--mono);font-size:.88em;background:var(--surface);padding:2px 6px;border-radius:4px;color:var(--accent-hover);border:1px solid var(--border-soft)}
+
+  @media (max-width:900px){
+    .layout{grid-template-columns:1fr;gap:0;padding:0 16px}
+    .menu-btn{display:flex}
+    .header-nav a{padding:6px 9px;font-size:12.5px}
+    .header-inner{padding:0 14px;gap:10px}
+    .brand{font-size:16px}
+    main{padding:28px 0 60px}
+    h2{margin-top:36px}
+    .meta{padding:12px 14px;font-size:13px}
+    .alert{padding:12px 14px;font-size:13px}
+    blockquote{padding:12px 14px;font-size:13.5px}
+    dl dd{padding-left:12px}
+    ul.list,ol.list{padding-left:20px}
+    .site-footer{padding:22px 0;font-size:12.5px}
+    .site-footer .footer-inner{padding:0 16px}
+
+    .toc{position:fixed;left:0;right:0;bottom:0;top:auto;max-height:78vh;background:var(--surface);border-top-left-radius:var(--radius-lg);border-top-right-radius:var(--radius-lg);border-top:1px solid var(--border);padding:8px 0 24px;overflow-y:auto;-webkit-overflow-scrolling:touch;z-index:60;transform:translateY(100%);opacity:0;pointer-events:none;transition:transform .28s cubic-bezier(.32,.72,0,1),opacity .2s ease;box-shadow:0 -8px 32px rgba(0,0,0,.5);overscroll-behavior:contain}
+    .toc.is-open{transform:translateY(0);opacity:1;pointer-events:auto}
+    .toc-handle{display:block;width:44px;height:4px;background:var(--border);border-radius:999px;margin:6px auto 14px}
+    .toc-title{padding:0 20px;margin-bottom:8px}
+    .toc nav{padding:0 12px;gap:2px}
+    .toc a{padding:11px 12px;font-size:14.5px;border-radius:var(--radius-sm);border-left:none;border-left:2px solid transparent}
+    .toc a.is-active{border-left-color:var(--accent)}
+
+    .sheet-backdrop{display:block;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:55;opacity:0;pointer-events:none;transition:opacity .2s ease;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+    .sheet-backdrop.is-open{opacity:1;pointer-events:auto}
+
+    body.sheet-locked{overflow:hidden}
+  }
+
+  @media (max-width:480px){
+    .header-nav{display:none}
+    .brand{font-size:15px}
+    main{padding:20px 0 48px}
+    h1{margin-bottom:12px}
+    .lead{font-size:14.5px}
+    .meta{padding:11px 12px}
+    .table-wrap{border-radius:var(--radius-sm)}
+    table{font-size:13px}
+    th,td{padding:9px 11px}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    .toc,.sheet-backdrop,.site-header,.menu-btn,a{transition:none !important}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="/" class="brand">NexusByte<span>.</span></a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="terms-of-use.html">Terms</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="payments-and-refunds.html" class="is-current">Payments</a>
+      <a href="legal.html">Legal</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open contents" aria-expanded="false" aria-controls="toc">☰</button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="toc" id="toc" aria-label="Contents" aria-hidden="false">
+    <div class="toc-handle" aria-hidden="true"></div>
+    <div class="toc-title">Contents</div>
+    <nav>
+      <a href="#r1">1. Overview</a>
+      <a href="#r2">2. Payment Methods</a>
+      <a href="#r3">3. Deposits &amp; Milestones</a>
+      <a href="#r4">4. Currency, Fees &amp; Taxes</a>
+      <a href="#r5">5. Refund Window</a>
+      <a href="#r6">6. Refunds by Category</a>
+      <a href="#r7">7. Non-Refundable Items</a>
+      <a href="#r8">8. Faulty or Incorrect Goods</a>
+      <a href="#r9">9. Crypto &amp; Gift Cards</a>
+      <a href="#r10">10. Chargebacks</a>
+      <a href="#r11">11. Statutory Rights</a>
+      <a href="#r12">12. How to Request</a>
+      <a href="#r13">13. Contact</a>
+    </nav>
+  </aside>
+
+  <main>
+    <div class="kicker">Legal Documentation</div>
+    <h1>Payments &amp; Refunds</h1>
+    <p class="lead">This policy explains the payment methods we accept, how deposits and refunds work, and how we handle disputes. It forms part of our <a href="terms.html">Terms of Use</a>.</p>
+
+    <div class="meta">
+      <strong>Effective:</strong> 10 October 2026, 13:20 UTC · <strong>Version 1.0</strong><br />
+      <strong>Contact:</strong> <a href="mailto:init.nexusbyte@gmail.com">init.nexusbyte@gmail.com</a>
+    </div>
+
+    <section id="r1">
+      <h2>1. Overview</h2>
+      <p>All payments are made in advance unless otherwise agreed in writing. Prices, taxes, and fees are set out at checkout or in your engagement agreement. By paying, you accept this policy.</p>
+    </section>
+
+    <section id="r2">
+      <h2>2. Payment Methods</h2>
+      <p>We accept payment via third-party payment processors, including:</p>
+      <ul class="list">
+        <li>Bank transfers</li>
+        <li>Wire transfers</li>
+        <li>PayPal</li>
+        <li>Stripe</li>
+        <li>Square</li>
+        <li>Wise</li>
+        <li>Cryptocurrencies</li>
+        <li>Gift cards</li>
+      </ul>
+      <p>Each processor has its own terms and privacy practices. We do not store full card numbers or cryptocurrency private keys.</p>
+    </section>
+
+    <section id="r3">
+      <h2>3. Deposits, Milestones &amp; Payment Plans</h2>
+      <p>For larger engagements — including certain Technical Services, Development projects, custom builds, and Enquiry Services — we may require:</p>
+      <ul class="list">
+        <li>A non-refundable deposit before work begins, to reserve capacity;</li>
+        <li>Milestone payments released as agreed deliverables are completed;</li>
+        <li>A payment plan with scheduled instalments.</li>
+      </ul>
+      <p>Specific terms are agreed in writing before work begins. Deposits become non-refundable once work has commenced, except where required by law or where we fail to deliver the agreed work.</p>
+    </section>
+
+    <section id="r4">
+      <h2>4. Currency, Fees &amp; Taxes</h2>
+      <p>Prices are quoted in <strong>GBP (£)</strong>. Any USD or EUR figures shown are indicative and may vary with exchange rates. You are responsible for any bank, wire, cryptocurrency network, or currency-conversion fees charged by your provider. Where VAT, sales tax, or customs duties apply, they are your responsibility unless expressly stated otherwise.</p>
+    </section>
+
+    <section id="r5">
+      <h2>5. Refund Window — 48 Hours</h2>
+      <div class="alert alert-info">
+        <strong>48-hour refund window.</strong> Refund requests must be submitted within 48 hours of delivery for physical goods, or within 48 hours of payment for services (provided the service has not yet begun).
+      </div>
+      <p>To qualify for a refund:</p>
+      <ul class="list">
+        <li><strong>Physical goods</strong> — must be unopened, unused, untouched, and unaltered, in original packaging.</li>
+        <li><strong>Services</strong> — the service must not have been provided yet, or you must provide a reasonable justification for cancellation that we accept at our discretion.</li>
+      </ul>
+      <p>Approved refunds are issued to the original payment method where possible, less any non-recoverable processing fees (typically 2–5%).</p>
+    </section>
+
+    <section id="r6">
+      <h2>6. Refunds by Category</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Category</th><th>Refund eligibility</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Consumables — unopened</td><td>Eligible within 48 hours of delivery</td></tr>
+            <tr><td>Consumables — opened, used, or tampered</td><td>Not eligible, except where the item was faulty on arrival</td></tr>
+            <tr><td>Apparel &amp; Accessories — standard items</td><td>Eligible within 48 hours of delivery if unworn, unwashed, and in original condition with tags</td></tr>
+            <tr><td>Apparel &amp; Accessories — custom or personalised</td><td>Not eligible once production has begun</td></tr>
+            <tr><td>Hardware</td><td>Eligible within 48 hours of delivery if unopened and unused</td></tr>
+            <tr><td>Software &amp; Subscriptions</td><td>Eligible within 48 hours of supply only if the licence or code has not been redeemed or activated</td></tr>
+            <tr><td>Digital Content</td><td>Not eligible once delivered, except where the file is corrupt or does not match its description</td></tr>
+            <tr><td>Technical Services</td><td>Refundable before work commences; case-by-case once work has begun</td></tr>
+            <tr><td>Platform Services</td><td>Refundable before work commences; not refundable once a recovery or modification has been attempted</td></tr>
+            <tr><td>Enquiry Services</td><td>Refundable before work commences; not refundable once a report has been delivered</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="r7">
+      <h2>7. Non-Refundable Items</h2>
+      <ul class="list">
+        <li>Opened, used, or tampered-with consumables — for hygiene and safety reasons;</li>
+        <li>Age-Restricted Goods once dispatched, where the failure is on the customer's side (failed age verification, refused delivery, or unlawful local possession);</li>
+        <li>Custom or personalised apparel once production has begun;</li>
+        <li>Digital Content once delivered, except where corrupt or misdescribed;</li>
+        <li>Software or subscriptions whose licence or code has been redeemed or activated;</li>
+        <li>Completed Technical Services, Platform Services, or Enquiry Services;</li>
+        <li>Confirmed cryptocurrency payments (see Section 9);</li>
+        <li>Gift-card purchases, except as store credit (see Section 9).</li>
+      </ul>
+    </section>
+
+    <section id="r8">
+      <h2>8. Faulty, Damaged, or Incorrect Goods</h2>
+      <p>If you receive a faulty, damaged, or incorrect item, contact us within 48 hours of delivery with photographs and your order reference. We will arrange a replacement, repair, or refund in line with your statutory rights (see Section 11). Return shipping for verified faults is at our cost.</p>
+    </section>
+
+    <section id="r9">
+      <h2>9. Crypto &amp; Gift-Card Payments</h2>
+      <p><strong>Cryptocurrency:</strong> once a transaction is confirmed on-chain, it is irreversible. We may, at our sole discretion, offer store credit or a fiat-equivalent refund net of network fees and price fluctuation.</p>
+      <p><strong>Gift cards:</strong> refunds for gift-card payments are issued as store credit only, and are subject to the gift card's own terms (including expiry).</p>
+    </section>
+
+    <section id="r10">
+      <h2>10. Chargebacks &amp; Payment Disputes</h2>
+      <p>If you believe a charge is incorrect, please contact us first at <a href="mailto:init.nexusbyte@gmail.com">init.nexusbyte@gmail.com</a>. We aim to resolve disputes within 5 working days.</p>
+      <p>Initiating a chargeback without first contacting us may result in:</p>
+      <ul class="list">
+        <li>Immediate suspension of your account and pending orders;</li>
+        <li>A <strong>£25 (indicative: ~$30 / ~€28) administration fee</strong>, where permitted by law;</li>
+        <li>Recovery of the disputed amount plus costs where the chargeback is unjustified.</li>
+      </ul>
+      <p>Nothing in this section prevents you from exercising statutory rights with your bank or card issuer.</p>
+    </section>
+
+    <section id="r11">
+      <h2>11. Your Statutory Rights</h2>
+      <p>Our 48-hour refund policy is offered <strong>in addition to</strong>, and does not replace, your statutory rights. Under the Consumer Rights Act 2015 (England &amp; Wales) and equivalent legislation in other jurisdictions, you may have:</p>
+      <ul class="list">
+        <li>A 30-day short-term right to reject faulty goods and obtain a full refund;</li>
+        <li>A right to repair or replacement for faults arising within 6 months (and beyond in some cases);</li>
+        <li>A right to a price reduction or final right to reject after one repair or replacement attempt;</li>
+        <li>EU/EEA consumers: a 14-day right of withdrawal for distance purchases, except for sealed goods unsealed after delivery, perishables, and personalised items.</li>
+      </ul>
+      <p>Where these rights exceed our policy, they prevail.</p>
+    </section>
+
+    <section id="r12">
+      <h2>12. How to Request a Refund</h2>
+      <ol class="list">
+        <li>Email <a href="mailto:init.nexusbyte@gmail.com">init.nexusbyte@gmail.com</a> from the address used for the order.</li>
+        <li>Include your order or invoice reference, the item or service, and the reason for the request.</li>
+        <li>Attach photographs or evidence where relevant (faults, damage, incorrect items).</li>
+        <li>We will acknowledge within 5 working days and confirm the outcome.</li>
+      </ol>
+    </section>
+
+    <section id="r13">
+      <h2>13. Contact</h2>
+      <blockquote><p><strong>NexusByte Initiative (NBI)</strong><br />Email: <a href="mailto:init.nexusbyte@gmail.com">init.nexusbyte@gmail.com</a></p></blockquote>
+    </section>
+  </main>
+</div>
+
+<div class="sheet-backdrop" id="sheetBackdrop" aria-hidden="true"></div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© 2026 NexusByte Initiative (NBI). All rights reserved. · <a href="mailto:init.nexusbyte@gmail.com">init.nexusbyte@gmail.com</a></p>
+    <p>Effective 10 October 2026, 13:20 UTC · Version 1.0</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+  var header=document.getElementById('siteHeader');
+  var menuBtn=document.getElementById('menuBtn');
+  var toc=document.getElementById('toc');
+  var backdrop=document.getElementById('sheetBackdrop');
+  var mqMobile=window.matchMedia('(max-width:900px)');
+  var lastFocus=null;
+
+  function isMobile(){return mqMobile.matches}
+
+  var onScroll=function(){header.classList.toggle('is-scrolled',window.scrollY>10)};
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+
+  function openSheet(){
+    lastFocus=document.activeElement;
+    toc.classList.add('is-open');
+    backdrop.classList.add('is-open');
+    document.body.classList.add('sheet-locked');
+    menuBtn.setAttribute('aria-expanded','true');
+    toc.setAttribute('aria-hidden','false');
+    var first=toc.querySelector('a');
+    if(first)first.focus({preventScroll:true});
+  }
+  function closeSheet(){
+    toc.classList.remove('is-open');
+    backdrop.classList.remove('is-open');
+    document.body.classList.remove('sheet-locked');
+    menuBtn.setAttribute('aria-expanded','false');
+    toc.setAttribute('aria-hidden','true');
+    if(lastFocus&&lastFocus.focus)lastFocus.focus({preventScroll:true});
+  }
+  function toggleSheet(){
+    if(toc.classList.contains('is-open'))closeSheet();else openSheet();
+  }
+
+  menuBtn.addEventListener('click',function(e){
+    e.stopPropagation();
+    if(isMobile())toggleSheet();
+  });
+
+  backdrop.addEventListener('click',closeSheet);
+
+  toc.addEventListener('click',function(e){
+    if(!isMobile())return;
+    var link=e.target.closest('a');
+    if(link){
+      closeSheet();
+      return;
+    }
+    var handle=e.target.closest('.toc-handle');
+    if(handle)closeSheet();
+  });
+
+  document.addEventListener('keydown',function(e){
+    if(e.key!=='Escape')return;
+    if(toc.classList.contains('is-open')&&isMobile())closeSheet();
+  });
+
+  mqMobile.addEventListener('change',function(){
+    if(!isMobile()&&toc.classList.contains('is-open'))closeSheet();
+  });
+
+  var links=Array.prototype.slice.call(toc.querySelectorAll('a'));
+  var sections=links.map(function(a){return document.querySelector(a.getAttribute('href'))}).filter(Boolean);
+  if('IntersectionObserver' in window&&sections.length){
+    var observer=new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          links.forEach(function(l){l.classList.remove('is-active')});
+          var active=links.find(function(l){return l.getAttribute('href')==='#'+entry.target.id});
+          if(active)active.classList.add('is-active');
+        }
+      });
+    },{rootMargin:'-25% 0px -65% 0px',threshold:0});
+    sections.forEach(function(s){observer.observe(s)});
+  }
+})();
+</script>
+</body>
+</html>
